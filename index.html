@@ -2928,6 +2928,26 @@ button:focus-visible,[onclick]:focus-visible{
 .ms-cross::before{ left:50%; top:0; bottom:0; width:1px; transform:translateX(-0.5px); }
 .ms-cross::after{ top:50%; left:0; right:0; height:1px; transform:translateY(-0.5px); }
 </style>
+<style id="shop-reskin">
+/* 文创商店 · 设计稿 1:1 */
+.shop-hero{
+  background:url('assets/shop/hero.jpg') center top/cover no-repeat;
+  min-height:200px; border-bottom:1px solid rgba(201,168,76,0.35);
+}
+.shop-hero-title{ display:none; }           /* 原画自带书法标题 */
+.shop-userbox{
+  background:rgba(7,12,8,0.93)!important;   /* 盖住原画里烘焙的静态积分框 */
+  border:1px solid rgba(201,168,76,0.5)!important;
+  box-shadow:0 6px 18px rgba(0,0,0,0.5);
+}
+.gc-img.has-img{
+  background-size:cover; background-position:center;
+  height:128px; border-radius:10px 10px 0 0;
+  box-shadow:0 0 0 1px rgba(201,168,76,0.18) inset;
+}
+.goods-card:hover .gc-img.has-img{ box-shadow:0 0 0 1px rgba(240,208,128,0.45) inset, 0 0 30px rgba(201,168,76,0.15) inset; }
+@media (max-width:700px){ .shop-hero{ min-height:150px; } }
+</style>
 </head>
 <body>
 <div id="boot-loader" aria-hidden="true">
@@ -6856,33 +6876,33 @@ window.testTransition = function(){
 /* ===================== 文创兑换逻辑 ===================== */
 const SHOP_DATA = [
   {key:'eco', name:'生态文创', items:[
-    {id:'eco1',name:'南山生态明信片套装',icon:'🖼️',cost:500},
-    {id:'eco2',name:'珍稀物种徽章（3枚装）',icon:'🦜',cost:600},
-    {id:'eco3',name:'南山守护者帆布包',icon:'👜',cost:1200},
-    {id:'eco4',name:'国家公园笔记本',icon:'📓',cost:800},
+    {id:'eco1',img:'assets/shop/eco1.jpg',name:'南山生态明信片套装',icon:'🖼️',cost:500},
+    {id:'eco2',img:'assets/shop/eco2.jpg',name:'珍稀物种徽章（3枚装）',icon:'🦜',cost:600},
+    {id:'eco3',img:'assets/shop/eco3.jpg',name:'南山守护者帆布包',icon:'👜',cost:1200},
+    {id:'eco4',img:'assets/shop/eco4.jpg',name:'国家公园笔记本',icon:'📓',cost:800},
   ]},
   {key:'red', name:'红色文创', items:[
-    {id:'red1',name:'老山界纪念徽章',icon:'🎖️',cost:800},
-    {id:'red2',name:'红军草鞋钥匙扣',icon:'🥾',cost:700},
-    {id:'red3',name:'长征路线折页地图',icon:'🗺️',cost:1000},
-    {id:'red4',name:'通道转兵纪念册',icon:'📕',cost:1500},
+    {id:'red1',img:'assets/shop/red1.jpg',name:'老山界纪念徽章',icon:'🎖️',cost:800},
+    {id:'red2',img:'assets/shop/red2.jpg',name:'红军草鞋钥匙扣',icon:'🥾',cost:700},
+    {id:'red3',img:'assets/shop/red3.jpg',name:'长征路线折页地图',icon:'🗺️',cost:1000},
+    {id:'red4',img:'assets/shop/red4.jpg',name:'通道转兵纪念册',icon:'📕',cost:1500},
   ]},
   {key:'blue', name:'侗韵非遗', items:[
-    {id:'blue1',name:'侗锦书签',icon:'🔖',cost:500},
-    {id:'blue2',name:'侗族纹样笔记本',icon:'📘',cost:800},
-    {id:'blue3',name:'鼓楼拼装模型',icon:'🏯',cost:1800},
-    {id:'blue4',name:'侗锦帆布包',icon:'👜',cost:1500},
+    {id:'blue1',img:'assets/shop/blue1.jpg',name:'侗锦书签',icon:'🔖',cost:500},
+    {id:'blue2',img:'assets/shop/blue2.jpg',name:'侗族纹样笔记本',icon:'📘',cost:800},
+    {id:'blue3',img:'assets/shop/blue3.jpg',name:'鼓楼拼装模型',icon:'🏯',cost:1800},
+    {id:'blue4',img:'assets/shop/blue4.jpg',name:'侗锦帆布包',icon:'👜',cost:1500},
   ]},
   {key:'rare', name:'限定珍藏', rare:true, items:[
-    {id:'rare1',name:'南山守护神金属勋章',icon:'🥇',cost:3000,cond:'兑换条件：完成全部生态任务 · 集齐全部物种图鉴'},
-    {id:'rare2',name:'少年长征路纪念礼盒',icon:'🎁',cost:5000,cond:'兑换条件：完成通道会议推演 · 集齐全部红色剧情'},
-    {id:'rare3',name:'红绿山河收藏册（终极版）',icon:'📚',cost:8888,cond:'兑换条件：全站 100% 完成度'},
+    {id:'rare1',img:'assets/shop/rare1.jpg',name:'南山守护神金属勋章',icon:'🥇',cost:3000,cond:'兑换条件：完成全部生态任务 · 集齐全部物种图鉴'},
+    {id:'rare2',img:'assets/shop/rare2.jpg',name:'少年长征路纪念礼盒',icon:'🎁',cost:5000,cond:'兑换条件：完成通道会议推演 · 集齐全部红色剧情'},
+    {id:'rare3',img:'assets/shop/rare3.jpg',name:'红绿山河收藏册（终极版）',icon:'📚',cost:8888,cond:'兑换条件：全站 100% 完成度'},
   ]},
   {key:'digital', name:'数字藏品', items:[
-    {id:'dig1',name:'生态观察员电子徽章',icon:'🌿',kind:'auto',unlock:100,desc:'100 积分自动解锁'},
-    {id:'dig2',name:'南山自然探索家数字证书',icon:'📜',kind:'auto',unlock:300,desc:'300 积分自动解锁'},
-    {id:'dig3',name:'南山守护神动态徽章',icon:'🛡️',kind:'collect',desc:'全图鉴达成解锁'},
-    {id:'dig4',name:'AR黄腹角雉模型',icon:'🦃',kind:'buy',cost:1200,desc:'扫描桌面即可展示'},
+    {id:'dig1',img:'assets/shop/dig1.jpg',name:'生态观察员电子徽章',icon:'🌿',kind:'auto',unlock:100,desc:'100 积分自动解锁'},
+    {id:'dig2',img:'assets/shop/dig2.jpg',name:'南山自然探索家数字证书',icon:'📜',kind:'auto',unlock:300,desc:'300 积分自动解锁'},
+    {id:'dig3',img:'assets/shop/dig3.jpg',name:'南山守护神动态徽章',icon:'🛡️',kind:'collect',desc:'全图鉴达成解锁'},
+    {id:'dig4',img:'assets/shop/dig4.jpg',name:'AR黄腹角雉模型',icon:'🦃',kind:'buy',cost:1200,desc:'扫描桌面即可展示'},
   ]},
 ];
 const SHOP_LEVELS=[
@@ -6980,7 +7000,7 @@ function renderShop(){
       }
       const sub = it.cond ? `<div class="gc-cond">${it.cond}</div>` : (it.desc?`<div class="gc-cond">${it.desc}</div>`:'');
       return `<div class="goods-card">${tier}${lock}
-        <div class="gc-img">${it.icon}</div>
+        <div class="gc-img${it.img?' has-img':''}"${it.img?` style="background-image:url('${it.img}')"`:''}>${it.img?'':it.icon}</div>
         <div class="gc-body"><div class="gc-name">${it.name}</div>${sub}<div class="gc-spacer"></div>${foot}</div>
       </div>`;
     }).join('');
