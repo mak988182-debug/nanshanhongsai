@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html class="dark" lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>南山·通道 | 红绿研学数字展馆</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@200..800&amp;family=Hanken+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: { extend: {
+  "colors": {
+    "on-surface": "#e1e3e2",
+    "on-primary": "#68000b",
+    "surface-container": "#1d2020",
+    "mineral-green": "#4A635D",
+    "surface-container-low": "#191c1c",
+    "primary": "#ffb3ae",
+    "on-tertiary-container": "#152e29",
+    "secondary-fixed-dim": "#e4c283",
+    "primary-fixed-dim": "#ffb3ae",
+    "tertiary-fixed-dim": "#b1ccc5",
+    "inverse-surface": "#e1e3e2",
+    "outline": "#a78a87",
+    "inverse-primary": "#ac3231",
+    "secondary": "#e4c283",
+    "charcoal": "#1A1C1C",
+    "secondary-container": "#5d4512",
+    "error": "#ffb4ab",
+    "tertiary": "#b1ccc5",
+    "surface-dim": "#111414",
+    "inverse-on-surface": "#2e3131",
+    "secondary-fixed": "#ffdea4",
+    "primary-fixed": "#ffdad7",
+    "on-primary-fixed": "#410004",
+    "surface-variant": "#323535",
+    "cinnabar": "#D9534F",
+    "on-secondary": "#412d00",
+    "on-secondary-fixed": "#261900",
+    "surface-container-lowest": "#0c0f0f",
+    "on-error-container": "#ffdad6",
+    "on-background": "#e1e3e2",
+    "on-tertiary": "#1c3530",
+    "tertiary-container": "#7c968f",
+    "on-primary-container": "#5c0008",
+    "background": "#111414",
+    "surface-tint": "#ffb3ae",
+    "tertiary-fixed": "#cde8e1",
+    "on-secondary-container": "#d5b476",
+    "on-surface-variant": "#dfbfbc",
+    "error-container": "#93000a",
+    "surface": "#111414",
+    "on-primary-fixed-variant": "#8b191d",
+    "desert-sand": "#E3D5C1",
+    "surface-bright": "#373a3a",
+    "weathered-gold": "#C4A468",
+    "on-error": "#690005",
+    "surface-container-high": "#272a2b",
+    "on-tertiary-fixed-variant": "#334b46",
+    "surface-container-highest": "#323535",
+    "on-tertiary-fixed": "#06201b",
+    "on-secondary-fixed-variant": "#5a4310",
+    "primary-container": "#ef635e",
+    "outline-variant": "#58413f"
+  },
+  "borderRadius": {
+    "DEFAULT": "0.125rem",
+    "lg": "0.25rem",
+    "xl": "0.5rem",
+    "full": "0.75rem"
+  },
+  "spacing": {
+    "stack-lg": "40px",
+    "margin-desktop": "64px",
+    "stack-md": "16px",
+    "stack-sm": "8px",
+    "gutter": "24px",
+    "margin-mobile": "20px"
+  },
+  "fontFamily": {
+    "headline-lg-mobile": [
+      "EB Garamond",
+      "serif"
+    ],
+    "headline-lg": [
+      "EB Garamond",
+      "serif"
+    ],
+    "body-md": [
+      "Manrope",
+      "sans-serif"
+    ],
+    "label-md": [
+      "Hanken Grotesk",
+      "sans-serif"
+    ],
+    "headline-md": [
+      "EB Garamond",
+      "serif"
+    ],
+    "caption": [
+      "Manrope",
+      "sans-serif"
+    ],
+    "body-lg": [
+      "Manrope",
+      "sans-serif"
+    ],
+    "display-lg": [
+      "EB Garamond",
+      "serif"
+    ],
+    "calligraphy": [
+      "Ma Shan Zheng",
+      "cursive"
+    ]
+  },
+  "fontSize": {
+    "headline-lg-mobile": [
+      "32px",
+      {
+        "lineHeight": "40px",
+        "fontWeight": "500"
+      }
+    ],
+    "headline-lg": [
+      "40px",
+      {
+        "lineHeight": "48px",
+        "fontWeight": "500"
+      }
+    ],
+    "body-md": [
+      "16px",
+      {
+        "lineHeight": "24px",
+        "fontWeight": "400"
+      }
+    ],
+    "label-md": [
+      "14px",
+      {
+        "lineHeight": "20px",
+        "letterSpacing": "0.05em",
+        "fontWeight": "600"
+      }
+    ],
+    "headline-md": [
+      "28px",
+      {
+        "lineHeight": "36px",
+        "fontWeight": "500"
+      }
+    ],
+    "caption": [
+      "12px",
+      {
+        "lineHeight": "16px",
+        "fontWeight": "400"
+      }
+    ],
+    "body-lg": [
+      "18px",
+      {
+        "lineHeight": "28px",
+        "fontWeight": "400"
+      }
+    ],
+    "display-lg": [
+      "64px",
+      {
+        "lineHeight": "72px",
+        "letterSpacing": "-0.02em",
+        "fontWeight": "500"
+      }
+    ]
+  }
+} }
+    }
+</script>
+<style>
+    body {
+        background-color: #0c0f0f;
+        color: #e1e3e2;
+        overflow-x: hidden;
+    }
+    /* ============ 页面切换 ============ */
+    .page { display: none; }
+    .page.active { display: block; animation: pageFade .6s ease both; }
+    @keyframes pageFade {
+        from { opacity: 0; transform: translateY(12px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    .nav-jump { cursor: pointer; }
+
+    /* ============ 各页面原有样式 ============ */
+    /* ===== 首页 ===== */
+body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            overflow-x: hidden;
+        }
+/* Glassmorphism utilities */
+        .glass-panel {
+            background: rgba(26, 28, 28, 0.4); /* charcoal/40 */
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(196, 164, 104, 0.2); /* weathered-gold/20 */
+        }
+.silk-border {
+            border: 1px solid rgba(196, 164, 104, 0.3);
+        }
+/* Hero Video Placeholder Overlay */
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(17, 20, 20, 0.3) 0%, rgba(17, 20, 20, 0.8) 100%);
+        }
+/* Subtle glow for buttons */
+        .glow-btn {
+            box-shadow: 0 0 15px rgba(228, 194, 131, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+.glow-btn:hover {
+            box-shadow: 0 0 25px rgba(228, 194, 131, 0.6);
+        }
+/* Decorative Grid Lines */
+        .decorative-grid {
+            background-image: 
+                linear-gradient(to right, rgba(196, 164, 104, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(196, 164, 104, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+/* Hide scrollbar for horizontal scrolling containers */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+.no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+/* ===== 认识南山 ===== */
+.glass-panel {
+            background: rgba(26, 28, 28, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(196, 164, 104, 0.2);
+        }
+.silk-border {
+            border: 1px solid rgba(196, 164, 104, 0.25);
+        }
+.parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+.zh-serif {
+            font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
+        }
+.academic-line {
+            position: relative;
+        }
+.academic-line::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background-color: #C4A468;
+        }
+.gold-glow {
+            text-shadow: 0 0 12px rgba(196, 164, 104, 0.4);
+        }
+/* ===== 认识南山 ===== */
+.glass-panel {
+            background: rgba(26, 28, 28, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(196, 164, 104, 0.2);
+        }
+.silk-border {
+            border: 1px solid rgba(196, 164, 104, 0.25);
+        }
+.parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+.zh-serif {
+            font-family: "Ma Shan Zheng", "Noto Serif SC", serif;
+        }
+.academic-line {
+            position: relative;
+        }
+.academic-line::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background-color: #C4A468;
+        }
+.gold-glow {
+            text-shadow: 0 0 12px rgba(196, 164, 104, 0.4);
+        }
+/* ===== 景点百科 ===== */
+body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-surface');
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+/* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: theme('colors.background'); }
+::-webkit-scrollbar-thumb { background: theme('colors.surface-variant'); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: theme('colors.weathered-gold'); }
+/* Charcoal Glass Texture */
+        .glass-panel {
+            background: rgba(26, 28, 28, 0.4);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(196, 164, 104, 0.2);
+        }
+.gold-glow {
+            text-shadow: 0 0 12px rgba(196, 164, 104, 0.4);
+        }
+/* Sidebar Hover Zone & Animation - Based on SCREEN_31 */
+        .sidebar-nav {
+            transform: translateX(-100%);
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            background: rgba(26, 28, 28, 0.2);
+            backdrop-filter: blur(40px);
+            border-right: 0.5px solid rgba(255, 255, 255, 0.15);
+        }
+.sidebar-trigger {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            z-index: 110;
+        }
+.sidebar-trigger:hover + .sidebar-nav,
+        .sidebar-nav:hover {
+            transform: translateX(0);
+        }
+/* Decorative Grid */
+        .decorative-grid {
+            background-image: 
+                linear-gradient(to right, rgba(196, 164, 104, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(196, 164, 104, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+/* ===== 通道会议旧址 ===== */
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+.charcoal-glass {
+            background: rgba(26, 28, 28, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(196, 164, 104, 0.2);
+        }
+.silk-border {
+            border: 1px solid rgba(196, 164, 104, 0.25);
+        }
+.text-glow {
+            text-shadow: 0 0 15px rgba(196, 164, 104, 0.4);
+        }
+.num-glow {
+            text-shadow: 0 0 8px rgba(196, 164, 104, 0.3);
+        }
+.calligraphy {
+            font-family: 'Ma Shan Zheng', cursive;
+        }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #111414; }
+::-webkit-scrollbar-thumb { background: #C4A468; border-radius: 10px; }
+/* ===== 茅坪湖 ===== */
+body {
+            background-color: #111414;
+            color: #e1e3e2;
+            overflow-x: hidden;
+        }
+.glass-panel {
+            background: rgba(26, 28, 28, 0.4);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(196, 164, 104, 0.15);
+        }
+.silk-border {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+.parallax-bg {
+            transition: transform 0.1s ease-out;
+        }
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+.gold-glow {
+            text-shadow: 0 0 12px rgba(196, 164, 104, 0.4);
+        }
+.calligraphy-title {
+            font-family: 'Ma Shan Zheng', 'EB Garamond', serif;
+        }
+/* ===== 皇都侗寨 ===== */
+body {
+            background-color: #0c0f0f;
+            color: #e1e3e2;
+            overflow-x: hidden;
+        }
+/* Charcoal Glass Texture */
+        .glass-panel {
+            background: rgba(26, 28, 28, 0.4);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(196, 164, 104, 0.2);
+        }
+.text-glow-gold {
+            text-shadow: 0 0 15px rgba(196, 164, 104, 0.6);
+        }
+.text-glow-gold-subtle {
+            text-shadow: 0 0 8px rgba(196, 164, 104, 0.3);
+        }
+.silk-border {
+            border: 1px solid rgba(227, 213, 193, 0.15);
+        }
+.parallax-bg {
+            transition: transform 0.1s ease-out;
+            will-change: transform;
+        }
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+.active-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+/* Calligraphic Title Styling */
+        .calligraphy-title {
+            font-family: 'Ma Shan Zheng', 'ZCOOL XiaoWei', serif;
+        }
+@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+@keyframes wave {
+            0%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.6); }
+        }
+.animate-fadeIn {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+    /* ===== 认识通道 ===== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&display=swap');
+        
+        body {
+            background-color: #111414;
+            color: #e1e3e2;
+            overflow-x: hidden;
+            font-family: 'Manrope', sans-serif;
+        }
+.vertical-calligraphy {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-family: 'Noto Serif SC', serif;
+        }
+.glass-panel {
+            background: rgba(26, 28, 28, 0.6);
+            backdrop-filter: blur(20px);
+            border: 0.5px solid rgba(201, 168, 76, 0.125);
+        }
+.charcoal-glass {
+            background: rgba(12, 15, 15, 0.7);
+            backdrop-filter: blur(24px);
+            border-right: 0.5px solid rgba(201, 168, 76, 0.125);
+        }
+.silk-border {
+            border: 1px solid rgba(196, 164, 104, 0.3);
+        }
+.cinnabar-glow:hover {
+            box-shadow: 0 0 20px rgba(217, 83, 79, 0.4);
+        }
+::-webkit-scrollbar {
+            width: 4px;
+        }
+::-webkit-scrollbar-track {
+            background: #111414;
+        }
+::-webkit-scrollbar-thumb {
+            background: #C4A468;
+            border-radius: 10px;
+        }
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+    /* ============ 共享左侧抽屉导航（置后以覆盖同名规则） ============ */
+    #side-nav {
+        transform: translateX(-100%);
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        background: rgba(26, 28, 28, 0.45);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+        border-right: 1px solid rgba(196, 164, 104, 0.2);
+    }
+    .nav-trigger {
+        position: fixed;
+        top: 0; left: 0;
+        width: 36px; height: 100%;
+        z-index: 90;
+    }
+    .nav-trigger:hover ~ #side-nav,
+    #side-nav:hover,
+    #side-nav.open { transform: translateX(0); }
+    .nav-link { cursor: pointer; }
+    .nav-link.active {
+        color: #C4A468 !important;
+        border-left: 2px solid #C4A468;
+        padding-left: 1rem;
+    }
+    .nav-link:not(.active) { color: #dfbfbc; transition: all .3s; }
+    .nav-link:not(.active):hover { color: #C4A468; padding-left: .5rem; }
+    .nav-sub { font-size: 17px; opacity: .92; }
+    .nav-disabled { color: rgba(223,191,188,.35) !important; cursor: not-allowed; }
+    #menu-btn { position: fixed; top: 20px; left: 20px; z-index: 95; }
+    .shared-glass {
+        background: rgba(26, 28, 28, 0.5);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(196, 164, 104, 0.25);
+    }
+    .nav-calli { font-family: 'Ma Shan Zheng', 'EB Garamond', serif; }
+</style>
+</head>
+<body class="font-body-md antialiased selection:bg-weathered-gold selection:text-charcoal">
+
+<!-- ===================== 共享：触发区 + 菜单按钮 + 左侧导航 ===================== -->
+<div class="nav-trigger"></div>
+<button id="menu-btn" class="shared-glass rounded-full w-11 h-11 flex items-center justify-center text-weathered-gold hover:scale-105 transition-transform" title="打开菜单">
+    <span class="material-symbols-outlined">menu</span>
+</button>
+
+<nav class="fixed top-0 left-0 h-full w-72 z-[100] flex flex-col" id="side-nav">
+    <div class="flex flex-col items-start p-10 h-full w-full gap-9 overflow-y-auto">
+        <div class="nav-calli text-4xl text-weathered-gold mb-1 select-none" style="text-shadow:0 0 12px rgba(196,164,104,.4)">南山·通道</div>
+
+        <div class="flex flex-col items-start gap-6 font-headline-md text-headline-md tracking-tight w-full">
+            <a class="nav-link active" data-page="page-home">首页</a>
+            <a class="nav-link" data-page="page-renshi">认识南山</a>
+            <a class="nav-link" data-page="page-renshitongdao">认识通道</a>
+
+            <div class="w-full">
+                <a class="nav-link block mb-4" data-page="page-baike">景点百科</a>
+                <div class="flex flex-col gap-4 pl-4 border-l border-weathered-gold/15">
+                    <a class="nav-link nav-sub" data-page="page-ziyangfeng">紫阳峰</a>
+                    <a class="nav-link nav-sub" data-page="page-laoshanjie">老山界</a>
+                    <a class="nav-link nav-sub" data-page="page-pingtan">坪滩群堡</a>
+                    <a class="nav-link nav-sub" data-page="page-tongdao">通道会议旧址</a>
+                    <a class="nav-link nav-sub" data-page="page-maoping">茅坪湖</a>
+                    <a class="nav-link nav-sub" data-page="page-huangdu">皇都侗寨</a>
+                </div>
+            </div>
+
+            <a class="nav-link nav-disabled" title="该页面尚未导入，请上传对应 HTML 文件">数字长卷</a>
+        </div>
+
+        <div class="mt-auto pt-8 border-t border-weathered-gold/10 w-full">
+            <div class="flex items-center gap-3 text-weathered-gold/60">
+                <span class="material-symbols-outlined text-[20px]">language</span>
+                <span class="font-label-md text-label-md">ZH / EN</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="page" id="page-home">
+Hover Trigger Area 
+
+ Side Drawer Navigation 
+
+ Main Content Area 
+<main class="w-full min-h-screen">
+<!-- Hero Section -->
+<section class="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+<!-- Parallax Background Image (Simulating Video) -->
+<div class="absolute inset-0 w-full h-full transform scale-105" style="transform: translateZ(-1px) scale(2) translateY(0.213333px); z-index: -1;">
+<img alt="A sweeping, majestic landscape showing mist rolling over ancient forested mountains in China. The scene captures the ethereal beauty of a sea of clouds embracing peaks at dawn. The lighting is soft and moody, with sunlight barely piercing through the dense fog. The overall aesthetic is cinematic, reverent, and grand, fitting the immersive dark-mode, high-fidelity gallery style." class="w-full h-full object-cover opacity-60" data-alt="A sweeping, majestic landscape showing mist rolling over ancient forested mountains in China. The scene captures the ethereal beauty of a sea of clouds embracing peaks at dawn. The lighting is soft and moody, with sunlight barely piercing through the dense fog. The overall aesthetic is cinematic, reverent, and grand, fitting the immersive dark-mode, high-fidelity gallery style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK2aaLQaNVApprXPzRwtpDpBdsoUyUftO6R2XFdGWP3daAITDU--j6edkz30oeIypXSBacFS9g8P8xjzsYVmD-kcAR4dCE-1meCWfT2h-AIEF1Zwxsjq_8Mby6WjMXXJoIVbDkK3GFsbiJ3T0L9Ws9u-eBOdVuuQ8Q-IdSUShMx_B7-GL1PvyBcFalxc4sXwLBKPmzZXqii-4uRMffrmJ_NFj5GwMSLNenmqe21EcFZzSdU1ImYoeGJF0oe9YOHkwfE38toU_3-8s"/>
+</div>
+<div class="absolute inset-0 hero-overlay"></div>
+<!-- Content -->
+<div class="relative z-10 text-center flex flex-col items-center px-margin-mobile md:px-margin-desktop mt-20">
+<!-- Calligraphic Title -->
+<h1 class="font-display-lg text-display-lg text-secondary mb-stack-md drop-shadow-lg" style="font-family: 'Ma Shan Zheng', 'EB Garamond', serif;">
+                云起南山
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-stack-lg">
+                探索生态秘境，追溯红色印记，聆听侗族古韵。<br/>在这片沉静的山脉间，翻开历史与自然的交响长卷。
+            </p>
+<div class="flex flex-col sm:flex-row gap-gutter items-center">
+<button class="px-8 py-4 bg-cinnabar text-secondary font-label-md text-label-md rounded-DEFAULT glow-btn flex items-center gap-2 hover:bg-inverse-primary transition-all">
+<span class="">开启数字长卷</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<a href="https://nanshanhongsai.pages.dev/" target="_blank" rel="noopener" class="px-8 py-4 bg-surface-variant/30 backdrop-blur-md text-weathered-gold font-label-md text-label-md rounded-DEFAULT silk-border hover:bg-surface-variant/50 transition-all flex items-center gap-2">
+<span class="">开始研学</span>
+<span class="material-symbols-outlined text-[18px]">explore</span>
+</a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce text-weathered-gold/60">
+<span class="font-caption text-caption mb-2 tracking-widest uppercase">滑动探索</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Overview Dashboard Section -->
+<section class="relative py-24 px-margin-mobile md:px-margin-desktop decorative-grid">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-stack-lg flex items-center gap-4">
+<div class="w-12 h-[1px] bg-weathered-gold/50"></div>
+<h2 class="font-headline-md text-headline-md text-secondary">南山概览</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Stat 1 -->
+<div class="bg-charcoal/80 backdrop-blur-md border border-weathered-gold/20 p-8 rounded-xl relative overflow-hidden group transition-all duration-300 hover:border-weathered-gold/40"><div class="absolute top-0 right-0 p-4 text-weathered-gold/40 font-mono text-sm opacity-50 group-hover:opacity-100 transition-opacity">N26°12' E109°45'</div>
+<div class="font-caption text-caption text-weathered-gold/80 mb-2">国家公园面积 (km²)</div>
+<div class="font-display-lg text-[48px] leading-[56px] text-weathered-gold drop-shadow-[0_0_8px_rgba(196,164,104,0.3)] mb-1">1395</div>
+<div class="w-full h-[1px] bg-gradient-to-r from-weathered-gold/50 to-transparent mt-4"></div></div>
+<!-- Stat 2 -->
+<div class="bg-charcoal/80 backdrop-blur-md border border-weathered-gold/20 p-8 rounded-xl relative overflow-hidden group transition-all duration-300 hover:border-weathered-gold/40"><div class="absolute top-0 right-0 p-4 text-weathered-gold/40 font-mono text-sm opacity-50 group-hover:opacity-100 transition-opacity">Flora &amp; Fauna</div>
+<div class="font-caption text-caption text-weathered-gold/80 mb-2">珍稀物种数量</div>
+<div class="font-display-lg text-[48px] leading-[56px] text-weathered-gold drop-shadow-[0_0_8px_rgba(196,164,104,0.3)] mb-1">150+</div>
+<div class="w-full h-[1px] bg-gradient-to-r from-weathered-gold/50 to-transparent mt-4"></div></div>
+<!-- Stat 3 -->
+<div class="bg-charcoal/80 backdrop-blur-md border border-weathered-gold/20 p-8 rounded-xl relative overflow-hidden group transition-all duration-300 hover:border-weathered-gold/40"><div class="absolute top-0 right-0 p-4 text-weathered-gold/40 font-mono text-sm opacity-50 group-hover:opacity-100 transition-opacity">Red Heritage</div>
+<div class="font-caption text-caption text-weathered-gold/80 mb-2">红色遗址数量</div>
+<div class="font-display-lg text-[48px] leading-[56px] text-weathered-gold drop-shadow-[0_0_8px_rgba(196,164,104,0.3)] mb-1">12</div>
+<div class="w-full h-[1px] bg-gradient-to-r from-weathered-gold/50 to-transparent mt-4"></div></div>
+<!-- Stat 4 -->
+<div class="bg-charcoal/80 backdrop-blur-md border border-weathered-gold/20 p-8 rounded-xl relative overflow-hidden group transition-all duration-300 hover:border-weathered-gold/40"><div class="absolute top-0 right-0 p-4 text-weathered-gold/40 font-mono text-sm opacity-50 group-hover:opacity-100 transition-opacity">Intangible Heritage</div>
+<div class="font-caption text-caption text-weathered-gold/80 mb-2">非遗项目数量</div>
+<div class="font-display-lg text-[48px] leading-[56px] text-weathered-gold drop-shadow-[0_0_8px_rgba(196,164,104,0.3)] mb-1">60+</div>
+<div class="w-full h-[1px] bg-gradient-to-r from-weathered-gold/50 to-transparent mt-4"></div></div>
+</div>
+</div>
+</section>
+<!-- Theme Portals Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-stack-lg text-center">
+<h2 class="font-headline-md text-headline-md text-secondary mb-2">三大主题卷轴</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">深入探索南山的多重维度</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter h-[500px]">
+<!-- Ecology -->
+<div class="relative rounded-xl overflow-hidden group cursor-pointer silk-border bg-mineral-green/20">
+<img alt="A serene, high-fidelity macro shot of pristine nature in a misty forest. Lush, deep green ferns and moss-covered rocks are gently illuminated by soft, diffused light. The background is slightly blurred (bokeh) emphasizing the tactile beauty of the flora. The aesthetic is calm, mysterious, and aligns with a sophisticated, dark-mode gallery presentation." class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 mix-blend-overlay" data-alt="A serene, high-fidelity macro shot of pristine nature in a misty forest. Lush, deep green ferns and moss-covered rocks are gently illuminated by soft, diffused light. The background is slightly blurred (bokeh) emphasizing the tactile beauty of the flora. The aesthetic is calm, mysterious, and aligns with a sophisticated, dark-mode gallery presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUYr_i7UFgpFWDDcFsY-Poz_QAzBIIeEqRF3MDCY5iK0hIVn9UoEvHv58NZwrp-pCXu3695DAcfSuuBQ4ovHOdYQbQqjeRS0qPllkazPtTmWhqTnwgjHL6ILOBQONl0ZvEdv3juiFj2xPFLYnS53kM8cjCiZPOFgnN2tGy5aVHTc_NhUNWVM_4oN4XWZWNKBKaa3ACT2pJ-FoiX_jRSQPLesbMdaXpm--OxKeaofkpi0IsJEyJ3NFK37pzQoBgrWFxttFSwPSskpw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 glass-panel border-x-0 border-b-0 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 bg-charcoal/90">
+<div class="flex items-center gap-2 mb-2 text-weathered-gold">
+<span class="material-symbols-outlined text-[20px]">forest</span>
+<span class="font-label-md text-label-md">生态南山</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-secondary mb-2 text-weathered-gold">自然密码</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">探寻云海、湿地与珍稀动植物的共生之境。</p>
+<a class="inline-flex items-center gap-1 text-weathered-gold font-label-md text-label-md transition-colors hover:text-primary" href="#">
+                            进入馆内 <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Red History -->
+<div class="relative rounded-xl overflow-hidden group cursor-pointer silk-border bg-[#68000b]/20">
+<img alt="A moody, atmospheric shot of an ancient stone pathway winding through a dark, foggy mountain pass. The stones are weathered, suggesting a deep, solemn history. A subtle, warm red-orange glow filters through the mist from a distance, adding a touch of drama and reverence. The scene captures the spirit of historic journeys, fitting the dark, minimalist gallery style." class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 mix-blend-overlay" data-alt="A moody, atmospheric shot of an ancient stone pathway winding through a dark, foggy mountain pass. The stones are weathered, suggesting a deep, solemn history. A subtle, warm red-orange glow filters through the mist from a distance, adding a touch of drama and reverence. The scene captures the spirit of historic journeys, fitting the dark, minimalist gallery style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaXnciuWnZLN96zzMbHLkvCStQfdErKMnk2e84bHVAE_l2mA0vkRE_Z4tgK0ROVNGbEyVvKZjtOBJJK9kYCe8xP_WcIQh3OXgyEtZf2684ztLUFJPNvZ08vZP1FMcmOxSJjP1aMukMNC8t5bRa5NcEVw0KAuUayl0QxW6_HYloxR6fls9FOhtFcmS9YUlPOzL_jzsB0wEEmVBB8QFCrKfXb6cAbSH-ZjbJSeIW8zNejwVffWrx1gnEHGuu7Y4usXwNat89JK3xP7U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 glass-panel border-x-0 border-b-0 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 bg-charcoal/90">
+<div class="flex items-center gap-2 mb-2 text-weathered-gold">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+<span class="font-label-md text-label-md">红色南山</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-secondary mb-2 text-weathered-gold">星火燎原</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">重走长征古道，铭记老山界上的历史回响。</p>
+<a class="inline-flex items-center gap-1 text-weathered-gold font-label-md text-label-md transition-colors hover:text-primary" href="#">
+                            进入馆内 <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Culture -->
+<div class="relative rounded-xl overflow-hidden group cursor-pointer silk-border bg-[#152e29]/30">
+<img alt="A refined, close-up architectural shot of traditional Asian wooden structural elements, specifically resembling the intricate brackets of a Drum Tower. The wood is dark, textured, and aged, set against a deeply shadowed background. A soft, cool blue-grey ambient light creates a serene, scholarly atmosphere, highlighting the craftsmanship in a minimalist, tactile manner." class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700 mix-blend-overlay" data-alt="A refined, close-up architectural shot of traditional Asian wooden structural elements, specifically resembling the intricate brackets of a Drum Tower. The wood is dark, textured, and aged, set against a deeply shadowed background. A soft, cool blue-grey ambient light creates a serene, scholarly atmosphere, highlighting the craftsmanship in a minimalist, tactile manner." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLIYCMBotF1rsObFZQrnPf7lSxNrCNCeIlaFjtr5pT2ct2jMNVV4c-pDQtc0kSd_-E8lwILlOFb_AcBTLUnf9lP9yNOVtioF2z2PRhsjygOe7U9WEpW4nDBXVsdUrmyGlQqhE-q1f2uQeWv3hAMztu-U3DNFJvPpueD0ARg4REWPNi3yQukBIlYpFmdTyJqLLvqVHkJypPoa-NBlmYdZDValr0qnzw894OqN9qz9N_EHBzYRZGZN8oKUT3v0fAzF-v62_iH4tVxaY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 glass-panel border-x-0 border-b-0 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 bg-charcoal/90">
+<div class="flex items-center gap-2 mb-2 text-weathered-gold">
+<span class="material-symbols-outlined text-[20px]">festival</span>
+<span class="font-label-md text-label-md">侗韵南山</span>
+</div>
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-secondary mb-2 text-weathered-gold">鼓楼遗音</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">感受侗寨的风雨桥与大歌文化，触摸非遗脉络。</p>
+<a class="inline-flex items-center gap-1 text-weathered-gold font-label-md text-label-md transition-colors hover:text-primary" href="#">
+                            进入馆内 <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest text-secondary font-body-md text-body-md w-full mt-stack-lg border-t border-weathered-gold/10 opacity-80 hover:opacity-100 transition-opacity duration-300">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 w-full max-w-[1440px] mx-auto gap-8">
+<div class="font-headline-md text-headline-md text-secondary">
+                南山·通道
+            </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">关于我们</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">学术支持</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">联系我们</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">隐私政策</a>
+</div>
+<div class="text-on-surface-variant font-caption text-caption">
+                © 2024 南山·通道红绿研学数字展馆. All Rights Reserved.
+            </div>
+</div>
+</footer>
+</main>
+</div>
+
+<div class="page" id="page-renshi">
+<a class="fixed top-[20px] left-[20px] z-[70] flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-md bg-charcoal/60 border border-weathered-gold/20 text-weathered-gold font-label-md transition-all duration-300 hover:bg-charcoal/80 hover:border-weathered-gold/50 group" href="/">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:-translate-x-1"><br/></span>
+<span class="tracking-widest">返回首页</span>
+</a>
+ Hover Trigger Area 
+
+ Side Navigation Panel 
+
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center px-margin-mobile md:px-margin-desktop py-stack-lg parallax-bg overflow-hidden" data-alt="A sweeping, majestic aerial view of a misty mountain range at dawn, blending into a dark, moody background." style="background-image: linear-gradient(to right, rgba(17,20,20,0.9) 0%, rgba(17,20,20,0.4) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDqqp8rQa5bWf7aj6LUPbpMD70TaPhje3dbN5DkwWnNRJL1RlIe40b2NFTEH_u1aILYrpPv2W88wijSiiOaekrK-JgK1UPfFDzcUxaKo7p-O2A3bYBE4McigNUvyASISspiBEvRmZJuxozxoifvFZHNsrxgwzwXGEKNNy2f8QjeaCd4S-aJ5WWANj6grl41Sai0trtRHZ7h5F-eQdmY1smX6UJtuGQnnqZSx2Tq4PUgdCT9N3t7qyrWw3_U_rKaFwgSQt-EK-Pmjyg');">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full max-w-[1440px] mx-auto z-10">
+<div class="md:col-span-5 flex flex-col justify-center gap-stack-lg">
+<div class="space-y-4">
+<p class="font-headline-md text-weathered-gold italic tracking-widest uppercase opacity-80">Nanshan National Park</p>
+<h1 class="font-display-lg text-secondary zh-serif gold-glow leading-tight">天地长卷<br/>生生不息</h1>
+<p class="font-body-lg text-on-surface-variant mt-6 leading-relaxed max-w-md">
+                        地处湘桂交界，南山国家公园是中国南方极其珍稀的生态屏障。这里是候鸟迁徙的重要通道，也是众多特有孑遗物种的避难所。
+                    </p>
+</div>
+<div class="glass-panel p-8 rounded-xl silk-border">
+<div class="grid grid-cols-2 gap-8">
+<div>
+<p class="font-label-md text-weathered-gold mb-2 uppercase tracking-tighter opacity-70">Geographic Coordinates</p>
+<p class="font-headline-md text-secondary gold-glow font-mono">109°58′E<br/>26°03′N</p>
+</div>
+<div>
+<p class="font-label-md text-weathered-gold mb-2 uppercase tracking-tighter opacity-70">Total Area</p>
+<p class="font-headline-md text-secondary gold-glow font-mono">138,400<br/><span class="text-sm opacity-60">Hectares</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 flex justify-end items-center mt-12 md:mt-0 relative">
+<div class="w-full aspect-video rounded-xl overflow-hidden glass-panel flex items-center justify-center relative group silk-border">
+<img alt="Abstract topographic map" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-1000 mix-blend-luminosity scale-110 group-hover:scale-100" data-alt="An abstract, high-end digital topography rendering with delicate contour lines in glowing weathered gold against a deep charcoal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLGNowCayFEvleZ05HYbZ71wK5CIuI54oNuPwXJ8q1ToB5puaQgNHXxFhjczYul9CkVGfv-YYufdf2lcE-zws5FE3kSZD8GC_E75zENMU4eGfDUq2izq5YHgEEt5H9pI-DeVfvzemJXs3LP10m5GF7hzPFU4rpIUW_kd06LYXzPZ3p_TBrwEZe2vZJOvHWPDJMLfpJtfivhlcfr510YdKrkLYcxeSZcYQCDzw80KRWtm6d5BwscIGRb9sY0SyuwrVwvrz_-edzd1U"/>
+<div class="absolute inset-0 bg-gradient-to-br from-weathered-gold/5 via-transparent to-black/40 pointer-events-none"></div>
+<div class="absolute top-1/4 left-1/4 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-cinnabar animate-pulse shadow-[0_0_8px_rgba(217,83,79,0.8)]"></div>
+<span class="font-label-md text-on-surface bg-charcoal/60 px-3 py-1.5 rounded border border-weathered-gold/20 backdrop-blur-md">八十里大南山</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Nature Ecosystem Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative overflow-hidden">
+<!-- Decorative Grid Background -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: linear-gradient(#C4A468 1px, transparent 1px), linear-gradient(90deg, #C4A468 1px, transparent 1px); background-size: 50px 50px;"></div>
+<div class="max-w-[1440px] mx-auto relative z-10">
+<div class="mb-24 text-center">
+<h2 class="font-headline-lg text-secondary zh-serif academic-line inline-block mb-4 gold-glow">自然生态之境</h2>
+<p class="font-headline-md text-weathered-gold italic opacity-60 tracking-widest mt-2">Realms of Ecosystems</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Forest -->
+<div class="group relative h-[650px] rounded-xl overflow-hidden glass-panel cursor-pointer silk-border transition-all duration-500 hover:border-weathered-gold/50 hover:-translate-y-2">
+<img alt="Forest Ecosystem" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-110 filter sepia-[.3] hue-rotate-[130deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsLVr3H-il48U_uNcDyehU9O46IGJ0tv4yr-gnChhs3bcgGV8P9Xwhqw_9_8-fgPXAnZ2oYYvK8ErG4AGymR1N-hUUyX0CQXxPeeld9KZlTQpR1qTEnTbGJEfie0P4ERRqGe0Gx_2pMtwunmansp99_O8f9I4om0owUqoWumlC5IvY2Tob8r4C08zZGPc-V3S0Sum5-y5StMpK9Q-Jup2zTMwS5Fkv9o767BWV2tuLD1MzlOqpAjYMVRTs9LeyQ95Y39J3JQcBsTo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<span class="font-headline-md text-secondary gold-glow italic block mb-2 opacity-40">01</span>
+<h3 class="font-headline-lg text-on-surface zh-serif mb-4">幽深之林</h3>
+<p class="font-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-y-8 group-hover:translate-y-0 leading-relaxed">
+                            庇护着众多珍稀孑遗植物，苍翠掩映间，见证时间流转的静默力量。
+                        </p>
+</div>
+</div>
+<!-- Wetland -->
+<div class="group relative h-[650px] rounded-xl overflow-hidden glass-panel cursor-pointer md:-translate-y-12 silk-border transition-all duration-500 hover:border-weathered-gold/50 hover:-translate-y-14">
+<img alt="Wetland Ecosystem" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-110 filter sepia-[.2] hue-rotate-[190deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8Yy36Laf01khRkhY_zCx0k0wz_cDvPgtXvD6rb5W4C5VoTo_8a8QBBqCH44gbeRhRdI3O7SuHG2BzoJ5xJN48PQLpMiQeQ3j82lIqTnJSGoQxuvTEw1MeLZF-gLpa6AvoQZGL41bTzpfDdlea1Dkvu3d_-g5_YrGSoGpvFyQQbJa7Mss6-BZHHE5Y8PiGpRCnRiMycjLo4rnc_aahNCOLTbINgoPtpD-KfsLm1xe5r82_ygYxSAglP_sYLIDClbgRtUVRM6GZrbA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<span class="font-headline-md text-secondary gold-glow italic block mb-2 opacity-40">02</span>
+<h3 class="font-headline-lg text-on-surface zh-serif mb-4">静谧之水</h3>
+<p class="font-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-y-8 group-hover:translate-y-0 leading-relaxed">
+                            星罗棋布的湿地网络，是候鸟南归的生命驿站，波光潋滟中孕育生机。
+                        </p>
+</div>
+</div>
+<!-- Meadow -->
+<div class="group relative h-[650px] rounded-xl overflow-hidden glass-panel cursor-pointer silk-border transition-all duration-500 hover:border-weathered-gold/50 hover:-translate-y-2">
+<img alt="Meadow Ecosystem" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-1000 group-hover:scale-110 filter sepia-[.4] hue-rotate-[10deg]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOeQCTbWSgaYO48QqSnw3s8NGDzCFELHsWfuty2GlEyEJ2L36lpbnasX7PPa0XYVCRSm6HQOnRKs_CzMEVo0YHlEt0rD2EkJPXjQZFTjV-OS_3i6ECO7rvSCqAbxDalTBZggpkexbpNA3-69Fh3suIV-YvQJtfX8VPgkXEw8z51Rgl_a4jXX0Ulg_2ISFaG88qYmebmz_xypSAaOIRC2DClRNX-tElgbZ3tei6EQdrUMS_GM6CeNrQ6sYpWD1hN5tJDUmDQ7asDqE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<span class="font-headline-md text-secondary gold-glow italic block mb-2 opacity-40">03</span>
+<h3 class="font-headline-lg text-on-surface zh-serif mb-4">广阔之原</h3>
+<p class="font-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-y-8 group-hover:translate-y-0 leading-relaxed">
+                            罕见的高山台地草甸，风吹草低，勾勒出大地磅礴的脊梁。
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+ Footer 
+<footer class="bg-surface-container-lowest w-full border-t border-weathered-gold/10 px-margin-mobile md:px-margin-desktop py-16">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="font-headline-md text-secondary zh-serif gold-glow tracking-widest">
+            南山·通道
+        </div>
+<nav class="flex flex-wrap justify-center gap-10">
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md tracking-widest" href="#">关于我们</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md tracking-widest" href="#">学术支持</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md tracking-widest" href="#">联系我们</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all duration-300 font-label-md tracking-widest" href="#">隐私政策</a>
+</nav>
+<div class="font-body-md text-on-surface-variant opacity-40 text-center md:text-right">
+            © 2024 南山·通道红绿研学数字展馆. All Rights Reserved.
+        </div>
+</div>
+</footer>
+</div>
+
+<div class="page" id="page-renshitongdao">
+Fixed Return Button 
+ Sidebar Trigger Zone (40px) 
+
+ Hidden Sidebar Component 
+
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center px-margin-desktop overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4] scale-105 transition-transform duration-[10000ms] hover:scale-100" data-alt="A panoramic, cinematic view of the majestic Chengyang Wind and Rain Bridge in Tongdao County at dawn. The ancient wooden structure stretches over a misty river, surrounded by lush, deep green hills and traditional Dong ethnic villages. The lighting is ethereal and soft, reflecting a scholarly and reverent atmosphere with a palette of deep charcoal, malachite greens, and weathered gold tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh5JrmPHmpcfBRhAQq9X877MN7V9yvcYIIUBFSTlqyV59kR4eaCdecikzEAAqlrun5BGb7YRrN1cXR8B21DnLP9uD__VDOuwb2YGMCB7XDigpugmRtZzaAcgZqHL4IFQhzgST5YXFIW_VXOBeFpaaH6kNS9NZcBNBxYio-PWqzAnRua3sfGYaTKkord96MybkVSS8kxj13u87e_7bldSS4yh7x7OaVK1HOtve-rXAxunfKW2yoY5jKpp8HU53PeJs9UjHSBwMN6c8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-charcoal via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="relative z-10 flex w-full justify-between items-end pb-32">
+<div class="max-w-2xl">
+<h2 class="font-label-md text-label-md text-weathered-gold tracking-[0.4em] mb-6 animate-pulse uppercase">Huaihua · Tongdao</h2>
+<h1 class="font-headline-lg text-headline-lg md:text-[84px] md:leading-tight mb-8 text-on-surface">怀化通道<br/>侗族自治县</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg leading-relaxed">
+                        这里是“绿色的灵魂”与“红色的血脉”交汇之地。万佛山的丹霞奇景与侗寨的风雨廊桥跨越时空，见证了一段扭转乾坤的红色传奇。
+                    </p>
+<div class="mt-12 flex gap-6">
+<button class="bg-cinnabar text-white px-10 py-4 font-label-md text-label-md rounded-lg cinnabar-glow transition-all">开启探索之旅</button>
+<button class="silk-border bg-charcoal/40 backdrop-blur-md text-weathered-gold px-10 py-4 font-label-md text-label-md rounded-lg hover:bg-weathered-gold/10 transition-all">观看导览视频</button>
+</div>
+</div>
+<div class="hidden lg:flex flex-col items-center gap-12">
+<div class="vertical-calligraphy font-headline-lg text-headline-lg text-weathered-gold border-r border-weathered-gold/30 pr-8 tracking-[1rem]">
+                        认识通道
+                    </div>
+<div class="w-px h-32 bg-gradient-to-b from-weathered-gold to-transparent"></div>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
+<span class="font-caption text-caption uppercase tracking-widest">Scroll to explore</span>
+<div class="w-px h-12 bg-weathered-gold/50"></div>
+</div>
+</section>
+<!-- Heritage & Traditions -->
+<section class="py-stack-lg bg-background px-margin-desktop">
+<div class="mb-16">
+<h3 class="font-label-md text-label-md text-weathered-gold tracking-widest mb-4">HERITAGE &amp; TRADITIONS</h3>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">文化根脉</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative overflow-hidden rounded-xl silk-border glass-panel transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[0.3] group-hover:grayscale-0" data-alt="Detailed interior of a traditional Dong Drum Tower, showcasing intricate wooden joinery and ancient architectural patterns. The scene is lit by warm, golden firelight reflecting off polished dark wood surfaces, creating a moody, historic atmosphere with deep mineral green shadows. High-fidelity textures and scholarly aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcAumo05A4FBDiOuXt-oBHKWP41WPjKjkrlCtHyVVmdZx3FpiSdgA3io-MNo2eJ8wyuHqeWFw-jf1db2DuOF3gXzLFtNZbnE4e4ZopJRWoMf1DVWATiLRE3qlEvRH2e88qzCgve9WRCwuNebKPFJpGUghBaQR_TE8Z_8s8nOWcx18ON9n4M_ROq3so5G6iLsAGhJE-ujPmWIhUczQp11d9YYOfPiHySbiadiV1MeFBTUKBkHyuKGsExMM6jRLakchSfrBG6AAAXss"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-weathered-gold mb-3">鼓楼建筑</h4>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-500 line-clamp-2">
+                            侗寨的灵魂，凝聚着不着一钉一铆的营造智慧，是社区生活的精神坐标。
+                        </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative overflow-hidden rounded-xl silk-border glass-panel transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[0.3] group-hover:grayscale-0" data-alt="A group of Dong ethnic women in traditional indigo and cinnabar red attire, performing the Grand Song in an ancient village square. Soft daylight filters through the mountain mist, highlighting the intricate silver ornaments. The visual style is ethereal and museum-grade, with a focus on cultural preservation and vibrant textile textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyRpwvU5TZB4JSlmS77mD74Eghl1iinnEzKKtlAqnnedyWjjUF5q8FCL7Pl5GuzWk3rwb8Bz-bbt92JyQxPVvtg-jO8Sy4Z2EM4fiKKwqc3I6tEnSj97baZnDne8Rz_aGxTTi1aAuTMgLHZramh3aiUdpwCSc2lGjOk1v3hgHMgm7QaoydIDgtcct5jfuwlPmGEbHuinHflX0UQ766sGO2o_rJxCmfoG_KJZisPQbiMD4LpFujMsEAuZGRTKUXQA6VI1-vHow366U"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-weathered-gold mb-3">侗族大歌</h4>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-500 line-clamp-2">
+                            众低高昂的多声部天籁，是流淌在血脉里的世界非物质文化遗产。
+                        </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative overflow-hidden rounded-xl silk-border glass-panel transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale-[0.3] group-hover:grayscale-0" data-alt="A close-up structural view of a Wind and Rain Bridge's corridor, featuring decorative carvings and traditional Chinese roof tiles. The palette emphasizes weathered gold, cinnabar accents on the pillars, and deep charcoal backgrounds. Atmospheric lighting suggests a timeless, historical site being digitally preserved." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-QkZwJ7s_Uch_6MM1Umb6SX3CeK5AT0Z7wseEzGOOpu5_pSuuZiDw4QpHwscvYAHfWi8hZbBrxlZ9x3nMTdgyhDocX6RnDJkHHIKc_wJoOToP-HJZpIWMdicwAf5Bkm7Vt7p4aV2zaGqp3lGHezy0mlvjjVlx3jp7S2E728xSQKkDsayxmIpwLwVE3hXGoi_l6Iq1-2ArMXEYhX2S23W_u2qtwv-2GrP-qu8gH2IqMFGcLhBGQ42jTeUt5MsR8Z21Efs7dur49gg"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 p-8 w-full">
+<h4 class="font-headline-md text-headline-md text-weathered-gold mb-3">风雨廊桥</h4>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity duration-500 line-clamp-2">
+                            横跨溪河的艺术丰碑，不仅是出行的通道，更是侗家人的遮风避雨之所。
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Turning Point of History -->
+<section class="relative py-24 bg-surface-container-low overflow-hidden">
+<div class="px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 relative">
+<div class="absolute -left-8 top-0 w-1 h-full bg-cinnabar"></div>
+<h3 class="font-label-md text-label-md text-cinnabar tracking-widest mb-4">RED TURNING POINT</h3>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">红色记忆：通道会议</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        1934年12月，红军在此写下长征史上的辉煌一页。通道会议实现了战略转兵，为遵义会议的召开奠定了坚实的基础，是伟大的转折。
+                    </p>
+<div class="flex items-center gap-8">
+<div class="p-4 bg-charcoal rounded-lg border border-cinnabar/30">
+<span class="block text-cinnabar font-headline-md text-headline-md">1934</span>
+<span class="text-caption text-on-surface-variant uppercase tracking-tighter">Year of Destiny</span>
+</div>
+<div class="p-4 bg-charcoal rounded-lg border border-cinnabar/30">
+<span class="block text-cinnabar font-headline-md text-headline-md">红色转折</span>
+<span class="text-caption text-on-surface-variant uppercase tracking-tighter">Historical Pivot</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="relative rounded-2xl overflow-hidden silk-border aspect-video">
+<img class="w-full h-full object-cover" data-alt="A historic museum exhibit of the Tongdao Meeting site, featuring old maps, lanterns, and wooden meeting furniture inside an ancient building. The lighting is warm and dramatic, highlighting the Cinnabar red accents and weathered gold textures of the artifacts. The mood is respectful, solemn, and highly detailed for digital history exploration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_eTe6bhBT4SzaAJp8B4Puc2zCiZBLwwFbovTRtLgfDqplbhP-TIqhWJJFyElMY1h7m2abPpnZXzjbA8rw0OEFYG6ECBF_z26gzrznyrKr4Nm6FxaDkB7oMiVCtWroGNfTIOZNVoY-LQ5Pdfb93OLqvEiHwl0ZjsJpDx-FkyZw_c_z_IgDWDbU5x_YYqY1oqKYeN-ZXSLMcku0KPlCWHY_MjvdtJkjR7-eDFZQrPpQ8KCMqJH6sscbH4sMyJvidFzaDkYwRI-ASPk"/>
+<div class="absolute inset-0 bg-cinnabar/10 mix-blend-multiply"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-20 h-20 rounded-full bg-cinnabar/90 flex items-center justify-center text-white hover:scale-110 transition-transform shadow-2xl">
+<span class="material-symbols-outlined text-4xl">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cultural Exploration -->
+<section class="py-stack-lg px-margin-desktop bg-background">
+<div class="text-center mb-16">
+<h3 class="font-label-md text-label-md text-weathered-gold tracking-widest mb-4">DIGITAL ACADEMY</h3>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">数字研学</h2>
+</div>
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="flex-1 relative group h-80 rounded-2xl overflow-hidden silk-border">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="A 3D digital reconstruction of a traditional Dong village layout, shown as a holographic display with glowing green and gold lines over a dark mineral surface. The aesthetic is ultra-modern, blending ancient architectural wisdom with future-facing digital visualization. High-tech, scholarly, and serene lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk_3u1IxGNhfoKTFPmvTb90T6BDpKU0pjqa1m5Gp6uVpUQuIx_ZYPvMTIQyGtaSgeIqI9Xq66h3hUlBkqDh5lGEF74k-K1Tn4LtNh-ACg7y_SN9H1XukOHXRDQmwqCfucs2TCc1hoRu_NznUuIOoCbcwUj0kQ4wFL0YiSH0k81bThAGqU_c0yLuN8AnLylecsMAFOADGy4vn0grfPDAcS2Q1sgzzR4snT8wgVZXapmKqK_Nr2N11vk_0rdvp8Fa0Re9ba1EsTE_Fo"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 bg-charcoal/40 group-hover:bg-charcoal/20 transition-all">
+<span class="material-symbols-outlined text-weathered-gold text-5xl mb-4">view_in_ar</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">3D 数字侗寨</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-2">全息解构传统营造工法</p>
+</div>
+</div>
+<div class="flex-1 relative group h-80 rounded-2xl overflow-hidden silk-border">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="An atmospheric art studio space showcasing Dong ethnic crafts and musical instruments under soft, directional spotlighting. The textures of the malachite green walls and cinnabar fabrics are vibrant yet sophisticated. The setting represents a modern cultural arts center dedicated to preservation and digital research." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUHypZDzQV5pGaKGomgXa33ZyNyrQNb3TTLIDb0xkOUlEY5r2gpZe2DXyt7BuZSRB09fDAKnjs8trZ4aYSb339POvCBPxDGeoABequm-1uusC2kZeF25_LgyrB1D5mbqfAYJBNQjEJ9cGW0M5q0FXcawfPehToH-485PrjTjG-wPM2EOLtFJp7ISGoR5cQ6ZPNubewfmtasfw33ElSxoqWk3BjEyNin_9m3Yu5nVDZ7-wGdNDogKKx4HuZ4Q1RzZSZAH5u7WPfYfk"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-8 bg-charcoal/40 group-hover:bg-charcoal/20 transition-all">
+<span class="material-symbols-outlined text-weathered-gold text-5xl mb-4">palette</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">文化艺术馆</h4>
+<p class="font-caption text-caption text-on-surface-variant mt-2">民族艺术数字沉浸体验</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+ Footer 
+<footer class="relative w-full bg-charcoal/80 backdrop-blur-md border-t border-weathered-gold/20 flex flex-col md:flex-row justify-between items-center px-margin-desktop py-stack-md">
+<div class="flex flex-col items-start gap-2 mb-6 md:mb-0">
+<span class="font-label-md text-label-md uppercase tracking-widest text-weathered-gold">Mogao Digital Exhibition</span>
+<p class="font-caption text-caption text-on-surface-variant opacity-80">© 2024 Nanshan National Park &amp; Tongdao County Research Support</p>
+</div>
+<div class="flex gap-8">
+<a class="font-caption text-caption text-on-surface-variant hover:text-weathered-gold underline underline-offset-4 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-weathered-gold underline underline-offset-4 transition-opacity" href="#">Terms of Service</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-weathered-gold underline underline-offset-4 transition-opacity" href="#">Scholarly Access</a>
+<a class="font-caption text-caption text-on-surface-variant hover:text-weathered-gold underline underline-offset-4 transition-opacity" href="#">Digital Preservation</a>
+</div>
+</footer>
+</div>
+
+<div class="page" id="page-baike">
+Ambient Background Gradient 
+<div class="fixed inset-0 z-0 pointer-events-none opacity-40 bg-[radial-gradient(circle_at_50%_-20%,_var(--tw-gradient-stops))] from-mineral-green/20 via-background to-background"></div>
+ Sidebar Hover Trigger 
+
+ Hidden Glass Side Navigation 
+
+ Main Content 
+<main class="flex-grow z-10 pt-[100px] pb-stack-lg px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto w-full">
+<!-- Page Header -->
+<header class="mb-20 flex flex-col items-center text-center">
+<h1 class="font-display-lg text-display-lg text-secondary mb-stack-sm tracking-tight gold-glow">景点百科</h1>
+<div class="w-16 h-[1px] bg-weathered-gold/40 mb-6"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant/80 max-w-2xl mx-auto mb-12 italic">
+            在光影与尘埃间，重塑时间的长廊。探索自然造化、红色星火与侗族人文交织的数字画册。
+        </p>
+<!-- Filter Tabs - Museum Style -->
+<div class="flex flex-wrap justify-center gap-12 border-b border-weathered-gold/10 pb-4">
+<button class="font-label-md text-label-md text-secondary relative after:absolute after:bottom-[-5px] after:left-0 after:w-full after:h-[2px] after:bg-secondary transition-all">全部</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-all px-2 group">
+                自然景观
+            </button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-all px-2 group">
+                红色景观
+            </button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-all px-2 group">
+                人文景观
+            </button>
+</div>
+</header>
+<!-- Matrix Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter auto-rows-[420px]">
+<!-- Card 1: 老山界 (Large) -->
+<article class="group relative overflow-hidden rounded-xl glass-panel col-span-1 md:col-span-2 lg:col-span-2 row-span-1 lg:row-span-2 cursor-pointer transition-all duration-500 hover:border-weathered-gold/50 nav-jump" data-page="page-laoshanjie">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-50 group-hover:opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9ySiS0QnrbBHluEjUHBo7l8qCLo0Mz1oNpDzPf0O0i7hpD_2OO-QtjO8P202AELXDutOWk2jxJybfieClk6yXJL5yUFBUxyGGGz7YfxvzFE_1XHMMDSYUZsaidJY2GfoEnjp-hiw5Ggj49Rblnmw1C9BvKdW8GGri12nyPPJWXUBSNLehKJ8WUyLAJyAGJFvLBj7eIurS658xOaDsVJFzhAWQsoVlj58C-J_6IZJiJMJge5O7uJtoityGSIDhAzOilxb8NUR5HPc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute top-6 left-6 z-10">
+<span class="bg-mineral-green/30 backdrop-blur-md border border-mineral-green/50 text-tertiary px-4 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-[0.2em]">
+                    自然景观
+                </span>
+</div>
+<div class="absolute bottom-0 w-full p-10 flex flex-col justify-end">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-display-lg text-[48px] text-secondary mb-4 drop-shadow-md">老山界</h2>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-weathered-gold/60">location_on</span>
+                            湖南省城步苗族自治县
+                        </p>
+</div>
+<div class="text-right opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 absolute right-10 bottom-[120px]">
+<p class="font-label-md text-label-md text-secondary mb-1">开放时间: 08:30-17:30</p>
+<p class="font-caption text-caption text-on-surface-variant">探索深度: 深度体验</p>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-white/5 flex gap-6 text-on-surface-variant/60">
+<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined">image</span></button>
+<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined">videocam</span></button>
+<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined">view_in_ar</span></button>
+<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined">route</span></button>
+</div>
+</div>
+</article>
+<!-- Card 2: 通道会议旧址 -->
+<article class="group relative overflow-hidden rounded-xl glass-panel cursor-pointer transition-all duration-500 hover:border-weathered-gold/50 nav-jump" data-page="page-tongdao">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzJGuMO_C0pR1RVLI1mSnSTLuPhACm6Zt2UDJuTorE5CytQYlNdn9y9BbL0IX_R5gUqh2dGDZY-2QDf_UwtqTgqxlkAZ1Qz5DTozWCVTT-6WdS7eiZR3Onk-hn7oGHjItOk1ttpUYfb66guyJEDQJhf_RX00rcsHoFv69cKnk3OGyfW3g-_KXv8AegPqE0qTijTOsX23sohJ2Tk24TrZP_PC0uPq-1sazeuDj5fhwIazTSA-sB7hwsYTiEtrWtWD-WACHd2dMh4H8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent"></div>
+<div class="absolute top-6 left-6 z-10">
+<span class="bg-cinnabar/20 backdrop-blur-md border border-cinnabar/40 text-primary px-4 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-[0.2em]">
+                    红色景观
+                </span>
+</div>
+<div class="absolute bottom-0 w-full p-8 flex flex-col justify-end h-full">
+<h2 class="font-display-lg text-[32px] text-secondary mb-2">通道会议旧址</h2>
+<p class="font-body-md text-on-surface-variant/70 text-sm mb-4">恭城书院</p>
+<div class="border-t border-white/5 pt-4 flex justify-between text-on-surface-variant/40">
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">image</span>
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">view_in_ar</span>
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">route</span>
+</div>
+</div>
+</article>
+<!-- Card 3: 皇都侗寨 -->
+<article class="group relative overflow-hidden rounded-xl glass-panel cursor-pointer transition-all duration-500 hover:border-weathered-gold/50 nav-jump" data-page="page-huangdu">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMjHlAKiBHQZwwn7ntkbjERfAkgO02HhVOPkdGNxbpmylMzhS2IfbyIX3soCGaElkLCiPNuHL9j1ioZJTePfbtT4-p96JlxWvW6y3PJiYfo-BCj9Bq8wVBoTs-PkS4Bh-mh7BGLRYwrCORmAo6ehdFF2ptWB3YFHUXgoITRBTyxtvNtXLuLY7QIbo9GVlcUO4cbhnHifxWcAWnEIVdN_gfqXQUo8blu_wkccizxz4hRtS1Wp2ByWVDMy2fy2ysnjnh3MFmUPqd8bI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent"></div>
+<div class="absolute top-6 left-6 z-10">
+<span class="bg-on-tertiary-container/40 backdrop-blur-md border border-tertiary/30 text-tertiary px-4 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-[0.2em]">
+                    人文景观
+                </span>
+</div>
+<div class="absolute bottom-0 w-full p-8 flex flex-col justify-end h-full">
+<h2 class="font-display-lg text-[32px] text-secondary mb-2">皇都侗寨</h2>
+<p class="font-body-md text-on-surface-variant/70 text-sm mb-4">通道侗族自治县</p>
+<div class="border-t border-white/5 pt-4 flex justify-between text-on-surface-variant/40">
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">image</span>
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">videocam</span>
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">route</span>
+</div>
+</div>
+</article>
+<!-- Card 4: 紫阳峰 -->
+<article class="group relative overflow-hidden rounded-xl glass-panel cursor-pointer transition-all duration-500 hover:border-weathered-gold/50 nav-jump" data-page="page-ziyangfeng">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiCtES2jHKSMgc8n4EmrEfGwtFxhEyFiC52t7Y-cVSKlW9fGSmFx7t3cverp4xWw3SOxQc1I4B9mvKVQKSgIm7SBxxaF6SR_i_WJlPPEkRnhMOmmemPjhiOyiBdkZ4j-IA_M0KS9n26Oj88U4gsUwObcRGxUwBd9jZSLbUZshp5EKx-KacJ_3qhUp-iSFPk4sQ79hCdqcxTGt_HlQOYFWm3SkDDXdo5kx7chdhbnhktVcKw55Ym3Cl95JI-ViwetvQdwFcfxAtX_k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 w-full p-8 flex flex-col justify-end h-full">
+<h2 class="font-display-lg text-[28px] text-secondary mb-1">紫阳峰</h2>
+<p class="font-body-md text-on-surface-variant/60 text-xs mb-3">南山国家公园</p>
+<div class="border-t border-white/5 pt-3 flex justify-between text-on-surface-variant/30">
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">image</span>
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">route</span>
+</div>
+</div>
+</article>
+<!-- Card 5: 茅坪湖 -->
+<article class="group relative overflow-hidden rounded-xl glass-panel cursor-pointer transition-all duration-500 hover:border-weathered-gold/50 nav-jump" data-page="page-maoping">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYubCfbkgXle8VobqPZsqlsrmeGniHgFVvWIid0yeROLXHC6jVw0EAlqZEyT3UoTwvBQs0wTuGyrPYdzy4tN6d90WiMfnItiGkTza-irOztPsjV075vKtTqicGG1-sENqDRGu5Xy4SeKW077-f9MW15K9wnsVo4zzrEnkQBBzeOAHqiddARe4vjjDbpOnjn1eHkob-cOwXP7seKi7b-JBCU2A8u8tIc12Rm9XH9yx51DQfwThweuZa4JkM9JJz7Hd1Pr20n5RROrc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 w-full p-8 flex flex-col justify-end h-full">
+<h2 class="font-display-lg text-[28px] text-secondary mb-1">茅坪湖</h2>
+<p class="font-body-md text-on-surface-variant/60 text-xs mb-3">南山国家公园</p>
+<div class="border-t border-white/5 pt-3 flex justify-between text-on-surface-variant/30">
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">image</span>
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">videocam</span>
+</div>
+</div>
+</article>
+<!-- Card 6: 长征古道 -->
+<article class="group relative overflow-hidden rounded-xl glass-panel cursor-pointer transition-all duration-500 hover:border-weathered-gold/50">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiqf2IoXCB5dwwiF9_yDnp8JdEUdLxjCJUHTNMt6XOdfOBkwPjnRoFqJICcN4NgumwOk3InhfqRy_sMEzBiPk5x9geybKiXUn5glO00mk0wlnEw8hlYMLrKwBytYnBifiodwEmDbMVKNe7bcaHBPWin0akb-O--4t5Um5sGWJ3VhTRhC9-Fi790NrfVUYeeiO-Edd7dOPgxVA9SW22__smNMP-e4U1tMEv_jRqDUlDz5lpy8EYhm5WYhVOSg2pHPCtFvL8F33JB84"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-0 w-full p-8 flex flex-col justify-end h-full">
+<h2 class="font-display-lg text-[28px] text-secondary mb-1">长征古道</h2>
+<p class="font-body-md text-on-surface-variant/60 text-xs mb-3">红色遗迹</p>
+<div class="border-t border-white/5 pt-3 flex justify-between text-on-surface-variant/30">
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">image</span>
+<span class="material-symbols-outlined hover:text-secondary text-[20px]">route</span>
+</div>
+</div>
+</article>
+</div>
+</main>
+ Footer Component 
+<footer class="bg-surface-container-lowest border-t border-weathered-gold/10 px-margin-desktop py-16 w-full mt-24 z-10">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-display-lg text-[32px] text-secondary mb-4 drop-shadow-sm">南山·通道</span>
+<span class="font-body-md text-on-surface-variant/50 text-sm">
+                © 2024 南山·通道红绿研学数字展馆. All Rights Reserved.
+            </span>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<ul class="flex flex-wrap justify-center gap-8">
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">关于我们</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">学术支持</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">联系我们</a></li>
+<li class=""><a class="font-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">隐私政策</a></li>
+</ul>
+<div class="flex items-center gap-4 text-weathered-gold/40">
+<span class="material-symbols-outlined">share</span>
+<span class="material-symbols-outlined">language</span>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<div class="page" id="page-tongdao">
+Hover Trigger Area 
+
+ Hidden Side Navigation 
+
+<main class="relative w-full">
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0 scale-105" id="hero-bg-tongdao">
+<div class="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-transparent to-background z-10"></div>
+<img class="w-full h-full object-cover opacity-70" data-alt="A cinematic, high-angle photograph of the Gongcheng Academy, a traditional Chinese wooden architectural complex with dark grey tiled roofs and white walls. The scene is bathed in a moody, scholarly atmosphere with soft morning mist rolling between the ancient buildings. The lighting is low-key and dramatic, emphasizing the weathered textures of the timber and stone. The color palette is dominated by deep charcols, mineral greens, and subtle hints of weathered gold under a soft, overcast sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ4JPP_Ty5cGw02Yt99tR9PJzyID_dY2NhFQyfbU_gqhWm0r3L2AffIzCe8M905QvquYz2cDh-hKm0z6o_zAVpLsS_0wVoA6RlNz4Lpd4N14H09DvjIEyHLI6W6nylILZ6fhlQWnbKn3iPURIsfnAvLa2kiClxSiLo6x3Dqrk9wfQpNL-suStcFynEw0XmS7o4Yx-khU6c_JcELM12yPd7Vkt-LgS1ySq09OgFetNsbYZeu63BZ6FCHQVEGcRp_u1AcHZPouX9T14"/>
+</div>
+<div class="relative z-20 text-center px-margin-mobile max-w-4xl">
+<h1 class="calligraphy text-[80px] md:text-[120px] text-weathered-gold text-glow mb-4 leading-none">通道会议旧址</h1>
+<p class="font-headline-md text-headline-md text-white/70 tracking-[0.3em] uppercase">恭城书院 · 红色地标</p>
+<div class="mt-12 flex flex-wrap justify-center gap-gutter">
+<div class="charcoal-glass px-8 py-3 rounded-full flex items-center gap-3">
+<span class="material-symbols-outlined text-cinnabar" data-icon="calendar_today">calendar_today</span>
+<span class="font-label-md text-label-md text-desert-sand num-glow">1934年12月12日</span>
+</div>
+<div class="charcoal-glass px-8 py-3 rounded-full flex items-center gap-3">
+<span class="material-symbols-outlined text-cinnabar" data-icon="location_on">location_on</span>
+<span class="font-label-md text-label-md text-desert-sand num-glow">26.15°N, 109.78°E</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-weathered-gold/40 animate-bounce">
+<span class="font-label-md text-[10px] uppercase tracking-[0.4em]">滑动探索历史</span>
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</div>
+</section>
+<!-- Technical Specs Ticker -->
+<div class="w-full charcoal-glass border-x-0 py-5 overflow-hidden whitespace-nowrap">
+<div class="flex animate-[scroll_25s_linear_infinite] gap-16 text-on-surface-variant font-label-md tracking-wider">
+<span class="flex items-center gap-2">海拔高度: <span class="text-weathered-gold num-glow">380m</span></span>
+<span class="text-weathered-gold/30">•</span>
+<span class="">建筑年代: <span class="text-weathered-gold">清代晚期</span></span>
+<span class="text-weathered-gold/30">•</span>
+<span class="">保护等级: <span class="text-weathered-gold">国家重点文物保护单位</span></span>
+<span class="text-weathered-gold/30">•</span>
+<span class="">地貌特征: <span class="text-weathered-gold">侗族特色干栏式建筑</span></span>
+<span class="text-weathered-gold/30">•</span>
+<span class="">现存面积: <span class="text-weathered-gold num-glow">1500㎡</span></span>
+<span class="text-weathered-gold/30">•</span>
+<span class="flex items-center gap-2">海拔高度: <span class="text-weathered-gold num-glow">380m</span></span>
+<span class="text-weathered-gold/30">•</span>
+<span class="">建筑年代: <span class="text-weathered-gold">清代晚期</span></span>
+</div>
+</div>
+<!-- Narrative Section -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop py-32 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="w-16 h-1 bg-cinnabar mb-10 shadow-[0_0_10px_rgba(217,83,79,0.5)]"></div>
+<h2 class="calligraphy text-6xl text-weathered-gold text-glow mb-8">伟大的转兵</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant/90 leading-relaxed mb-10">
+                在通道转兵纪念馆，历史的厚重感扑面而来。1934年12月12日，在红军长征的危急时刻，一次深刻影响革命前途的军事会议在恭城书院明伦堂召开。
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80 italic border-l-2 border-weathered-gold/30 pl-8 mb-12">
+                "在这里，红军决定放弃向湘西进军的计划，转而向敌人力量薄弱的贵州进发，实现了伟大的战略转折。"
+            </p>
+<button class="w-fit px-10 py-5 bg-cinnabar text-white font-label-md rounded shadow-lg shadow-cinnabar/20 hover:scale-105 hover:bg-on-primary-container transition-all flex items-center gap-3 group">
+                阅读文献资料
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="aspect-[16/10] overflow-hidden rounded-xl silk-border relative group charcoal-glass p-1">
+<div class="w-full h-full overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Detailed interior shot of an ancient Chinese wooden study hall with weathered dark wood columns and beams. Dust motes dance in single shafts of dramatic natural light coming through paper-covered windows, illuminating simple wooden tables and benches. The atmosphere is solemn, quiet, and archival, reflecting a museum-grade digital preservation aesthetic. The color palette centers on rich mahoganies, deep charcoals, and a glowing weathered gold from the sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUi7SNSHBRNVAw6dENAmx0ckPq3Axk_dQNXQ5J97b5ffWtONqG88e53KZiAt_4MxHqWg4_CYEfm2ag57gDXWobWzp4JAHfal3Z5A_HV-Z8KoPyzCnR0ebto0pS8ixoCpHcEvrl3XFB-wZKFQVpgK77l_0iD7CKW0vKXITnnwRtVyxPU3DTZbZb89Gvhk1Y9ok6roaWyhHUQH8i7SkGt9fFN3YqjQ5gRtlN2vr_UhlhMD4ej9RK0dhdqUD3VIZC7_RZIF0v-Ki4tyA"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent opacity-60"></div>
+</div>
+<!-- Info Card -->
+<div class="absolute -bottom-8 -left-8 charcoal-glass p-8 rounded-xl max-w-xs shadow-2xl hidden md:block">
+<span class="material-symbols-outlined text-weathered-gold text-3xl mb-3" data-icon="history_edu">history_edu</span>
+<h4 class="calligraphy text-2xl text-weathered-gold mb-2">恭城书院</h4>
+<p class="font-caption text-caption text-on-surface-variant/80 leading-relaxed">始建于宋代，现存建筑多为清嘉庆年间重修，是湘西南保存最完整的古代书院之一。</p>
+</div>
+</div>
+</section>
+<!-- Interactive Modules -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop py-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Digital Sand Table -->
+<div class="md:col-span-2 charcoal-glass rounded-xl p-stack-lg relative overflow-hidden group">
+<div class="absolute top-6 right-6 p-stack-md z-10">
+<span class="bg-cinnabar/20 text-cinnabar px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] border border-cinnabar/30">Live 3D Rendering</span>
+</div>
+<h3 class="calligraphy text-4xl text-weathered-gold mb-4">沉浸式数字沙盘</h3>
+<p class="font-body-md text-body-md text-on-surface-variant/80 mb-10 max-w-md">通过激光扫描与高精度建模，重现1934年红军转兵的战略态势与地理坐标。</p>
+<div class="aspect-[21/9] rounded-lg overflow-hidden bg-black/40 silk-border relative">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000" data-alt="A high-tech digital 3D topographical map display showing mountainous terrain in glowing mineral green and charcoal hues. Strategic red lines representing troop movements carve through the valleys. The aesthetic is clean, sophisticated, and dark, with data visualizations and UI elements floating over the terrain. Soft gold accents highlight key historical points of interest in a museum-grade digital interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-jqYwl6z72bIsxyDKN2qGn3_7i22ns97mZt5aMnKtrwlWljvnXXuEaq9ASKiASsz124mZmbHhGJ2wfDcYJr8jv9eTtxCrKRG2lcTrUquKOjNcmBtC9ROHUgGrowoujBXfEKI-xcEgWGWwq1ydeKdUlvKPznIvKrqUQwgZ2oHbJcFc_qtlATCAmNBFzP5r7hyiyVLUi85sRXYuRZBPBds8q4uP02Xbgdyqp2YkRl1-i7fHJOxC55xjilU24XhaK_w_ltP_gr6TuFU"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-20 h-20 rounded-full charcoal-glass text-weathered-gold flex items-center justify-center hover:scale-110 transition-all shadow-2xl group/btn">
+<span class="material-symbols-outlined text-4xl group-hover/btn:scale-110 transition-transform" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Panorama -->
+<div class="charcoal-glass rounded-xl p-stack-lg flex flex-col justify-between group">
+<div>
+<span class="material-symbols-outlined text-weathered-gold text-5xl mb-6 text-glow" data-icon="360">360</span>
+<h3 class="calligraphy text-4xl text-weathered-gold mb-4">明伦堂全景</h3>
+<p class="font-body-md text-body-md text-on-surface-variant/80">足不出户，身临其境感受会议现场的肃穆氛围。</p>
+</div>
+<div class="mt-8 aspect-square rounded-full silk-border overflow-hidden relative mx-auto w-44 charcoal-glass p-2">
+<img class="w-full h-full object-cover rounded-full animate-[spin_30s_linear_infinite]" data-alt="A spherical 360-degree panorama preview of a traditional Chinese hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmHfpxitsPqOq2Io3zkKcMvW6SykVd1efXaUb3FdxNSBnEh|PJQK02HQw1apppuIr-ivVekAH2MEbhdF6SrLfdAuwfwuhDWACssUUtjnX3JKLOZxCpt9Ps-mfkn6RzPpgUNgDzKVqNXqAePNuW4rlwLzmpwIPIJ7aaiVn4LizHK573D5tryyOho7L0iiw8pZaUaQkfDEF5O_DzGBzzJzNf7Q9ULUpe3e2u2-8P9CeXP9gMu4E8PmavG-gOyeaJ_q6Fp4B4nAQHwiA"/>
+</div>
+<button class="mt-10 w-full py-4 border border-weathered-gold/30 text-weathered-gold font-label-md rounded-lg hover:bg-weathered-gold/10 transition-all tracking-widest">开启云游览</button>
+</div>
+<!-- Audio Guide -->
+<div class="md:col-span-3 charcoal-glass rounded-xl p-10 flex flex-col md:flex-row items-center gap-10">
+<div class="flex-shrink-0 w-24 h-24 rounded-full bg-cinnabar flex items-center justify-center text-white shadow-[0_0_20px_rgba(217,83,79,0.4)]">
+<span class="material-symbols-outlined text-4xl animate-pulse" data-icon="graphic_eq">graphic_eq</span>
+</div>
+<div class="flex-grow text-center md:text-left">
+<h3 class="calligraphy text-4xl text-weathered-gold mb-3">数字语音讲解</h3>
+<p class="font-body-md text-body-md text-on-surface-variant/70">由国家博物馆金牌讲解员为您录制，深度解读转兵背后的抉择。</p>
+</div>
+<div class="flex flex-col gap-5 w-full md:w-96">
+<div class="h-1.5 w-full bg-surface-variant/30 rounded-full relative">
+<div class="absolute left-0 top-0 h-full w-1/3 bg-weathered-gold rounded-full shadow-[0_0_10px_rgba(196,164,104,0.5)]"></div>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-xs text-weathered-gold/60 num-glow">04:12 / 12:45</span>
+<div class="flex gap-6 items-center">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-weathered-gold transition-colors" data-icon="skip_previous">skip_previous</button>
+<button class="material-symbols-outlined text-weathered-gold text-4xl text-glow" data-icon="pause_circle">pause_circle</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-weathered-gold transition-colors" data-icon="skip_next">skip_next</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+ Footer 
+<footer class="w-full py-16 px-margin-desktop flex flex-col items-center gap-10 bg-surface-dim border-t border-weathered-gold/10">
+<div class="calligraphy text-4xl text-weathered-gold text-glow">南山通道数字化展览馆</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-label-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">关于我们</a>
+<a class="font-label-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">版权声明</a>
+<a class="font-label-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">学术支持</a>
+<a class="font-label-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">数字保护</a>
+</div>
+<div class="flex flex-col md:flex-row gap-4 items-center mt-4">
+<span class="text-on-surface-variant/50 font-label-md text-xs tracking-widest">指导单位: 国家文物局</span>
+<span class="hidden md:block text-weathered-gold/20">|</span>
+<span class="text-on-surface-variant/50 font-label-md text-xs tracking-widest">技术支持: Nanshan Digital Lab</span>
+</div>
+<p class="font-caption text-[10px] text-on-surface-variant/30 mt-8 tracking-[0.2em] uppercase">© 2024 南山通道数字化展览馆. All Rights Reserved.</p>
+</footer>
+</div>
+
+<div class="page" id="page-maoping">
+Nav Trigger Area 
+
+ Side Navigation Bar (Hidden, Slide on Hover) 
+
+ Top Search/Overlay elements 
+<header class="fixed top-0 left-0 w-full z-40 flex justify-end items-center px-6 md:px-margin-desktop h-20 pointer-events-none">
+<div class="flex items-center gap-6 pointer-events-auto">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-weathered-gold/50">search</span>
+<input class="bg-transparent border-b border-weathered-gold/20 focus:border-weathered-gold outline-none pl-10 pr-4 py-1 text-label-md transition-all w-48 focus:w-64" placeholder="搜索数字化馆藏..." type="text"/>
+</div>
+<div class="flex items-center gap-4 text-weathered-gold/80">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform" data-icon="view_in_ar">view_in_ar</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform" data-icon="language">language</span>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="relative h-[100vh] w-full overflow-hidden flex items-center justify-center text-center px-6">
+<div class="absolute inset-0 z-0">
+<img alt="Landscape" class="w-full h-full object-cover opacity-60 parallax-bg scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyw6ZNPpgPO7wAYG3gX4yFbwUQY3nZWjWwwujKDDCtbuJ-9Trw5be6BlOmcfTOZlXQfbneoI7R4SixflYEcPbwYpea4_gT4_VQkWtgjmONK9qXohugIPoans4KhzspFJlMxULlcUE1nt_qPeyAFhcolQtdSoufs31xq-fNT1NT9KIWoK370os0z4kJ89NtycVQ6wbiYTH0wiB-yv9ljW1NKEWkgXr11R5GYRhOm7FQ2hW6WunHHBm1cNeYw13tY1HFd0NIK3ysOAs"/>
+<div class="absolute inset-0 bg-gradient-to-b from-charcoal/20 via-transparent to-background"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h1 class="calligraphy-title text-display-lg md:text-[120px] text-weathered-gold mb-6 gold-glow leading-tight">南山 • 茅坪湖</h1>
+<p class="font-body-lg text-lg md:text-xl text-on-surface-variant/90 max-w-2xl mx-auto leading-relaxed mb-10">
+                如同沙漠中深藏的碧玉，茅坪湖不仅是这片土地的生命之源，更是古代丝绸之路上，行旅者心中神圣的慰藉与平静的归宿。
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-cinnabar text-on-surface px-10 py-4 rounded-lg font-label-md flex items-center justify-center gap-2 hover:bg-on-primary-fixed-variant transition-all shadow-xl">
+<span class="material-symbols-outlined">explore</span>
+                    开启数字化导览
+                </button>
+<button class="glass-panel text-weathered-gold px-10 py-4 rounded-lg font-label-md border silk-border hover:bg-white/5 transition-all">
+                    了解历史背景
+                </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-weathered-gold/40 animate-bounce">
+<span class="text-[10px] tracking-[0.3em] uppercase">滚动探索</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Stats Bento Grid -->
+<section class="px-6 md:px-margin-desktop py-stack-lg grid grid-cols-2 md:grid-cols-4 gap-gutter -mt-20 relative z-20">
+<div class="glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-weathered-gold/40 transition-all">
+<div class="text-weathered-gold/40 text-xs font-mono mb-4 uppercase">Panoramic / 360</div>
+<div>
+<p class="font-display-lg text-5xl text-weathered-gold gold-glow">360°</p>
+<p class="text-label-md text-on-surface-variant/70 mt-2">数字化全景影像</p>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-weathered-gold/40 transition-all">
+<div class="text-weathered-gold/40 text-xs font-mono mb-4 uppercase">Archive / Records</div>
+<div>
+<p class="font-display-lg text-5xl text-weathered-gold gold-glow">1.2k</p>
+<p class="text-label-md text-on-surface-variant/70 mt-2">文字文献记载</p>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-weathered-gold/40 transition-all">
+<div class="text-weathered-gold/40 text-xs font-mono mb-4 uppercase">Ecology / Rating</div>
+<div>
+<p class="font-display-lg text-5xl text-weathered-gold gold-glow">4A级</p>
+<p class="text-label-md text-on-surface-variant/70 mt-2">生态水质保护</p>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl flex flex-col justify-between group hover:border-weathered-gold/40 transition-all">
+<div class="text-weathered-gold/40 text-xs font-mono mb-4 uppercase">Visitors / Annual</div>
+<div>
+<p class="font-display-lg text-5xl text-weathered-gold gold-glow">15w+</p>
+<p class="text-label-md text-on-surface-variant/70 mt-2">年度到访游客</p>
+</div>
+</div>
+</section>
+<!-- Feature Content Section -->
+<section class="px-6 md:px-margin-desktop py-stack-lg mt-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7 space-y-12">
+<h2 class="calligraphy-title text-7xl text-weathered-gold gold-glow leading-tight">万物生息，<br/>皆于此水。</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-4">
+<h3 class="font-headline-md text-2xl text-secondary flex items-center gap-4">
+<span class="w-12 h-[1px] bg-cinnabar"></span> 观测到的候鸟
+                        </h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">每年冬春交替，超过120种珍稀候鸟选择在此停留，构成了一幅生动的自然长卷。</p>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline-md text-2xl text-secondary flex items-center gap-4">
+<span class="w-12 h-[1px] bg-cinnabar"></span> 数字化光影修复
+                        </h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed">通过LiDAR扫描与多光谱成像技术，我们完美还原了湖泊在不同朝代的岸线变迁。</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="absolute inset-0 glass-panel rounded-2xl rotate-3"></div>
+<div class="relative z-10 p-2 glass-panel rounded-2xl -rotate-2 group transition-transform duration-700 hover:rotate-0">
+<img alt="Bird" class="w-full h-full object-cover rounded-xl shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKGTY_tEuiBP8qTmv_0ARIcI_ko92K6JjW21YL5vEPXWcpEPP5cclc_jKXNy6OjW30vetl99Lw3yTg6oIfk4TTE-dK3UPpy_JBB0EzWhLtjSUaIcMwrcOyByuDCOCmdSI4ui0qIBrAoRkGXVRTVFDAWAEyCd3jNE6uxCdy094RdbN79SF8tLjUraYTXIxcWLT-SZHFVJxtR1oCOqRtg_yTlBNoB0lTQ6o5q5ZtJuUnNw-NsWVaeh6gIaN677cFxDgng1qCP2t4OaE"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive AR Preview -->
+<section class="px-6 md:px-margin-desktop py-stack-lg">
+<div class="glass-panel rounded-3xl p-8 md:p-20 flex flex-col items-center text-center overflow-hidden relative silk-border">
+<div class="absolute top-0 right-0 p-8 opacity-5">
+<span class="material-symbols-outlined text-[300px]" data-icon="view_in_ar">view_in_ar</span>
+</div>
+<h2 class="calligraphy-title text-5xl md:text-7xl text-weathered-gold gold-glow mb-8">身临其境的虚实互鉴</h2>
+<p class="max-w-3xl font-body-lg text-on-surface-variant/80 mb-16 text-lg">
+                佩戴AR眼镜或使用移动设备，即可在现有的景观之上，观测到千年前的古渡口繁忙景象与消失的建筑遗址。
+            </p>
+<div class="relative w-full max-w-5xl aspect-video rounded-2xl overflow-hidden glass-panel p-2 silk-border group">
+<div class="relative w-full h-full overflow-hidden rounded-xl">
+<img alt="AR Tech" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[2000ms]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqwj6sfEVbDKlN8xSpEMP11q1fmJ_T5X9hZYhO7TQvU7jNk2Xu4_4B_-JDf4GQdSuywIo2_MBxI8HvXKUBDFAEdqERxTmLRaGzSbxDPxDqTKMQphHCkVV_nAUBR0A68PopYB98hZ0KcD-_r_nX1UW67MpZpelusUxxy4Dlg75uY58CKCHaqaBs89eGNQdGeZMtsvs6xuheEIj3Mcv5Dpk7MmjOEofhslaN8KUzt_-qGyKCW2CJ71fQvnfoesniqPOTjivx9SN8IVA"/>
+<div class="absolute inset-0 flex items-center justify-center bg-charcoal/20 backdrop-blur-sm group-hover:backdrop-blur-none transition-all duration-700">
+<div class="w-24 h-24 rounded-full bg-cinnabar/90 flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform shadow-[0_0_30px_rgba(217,83,79,0.5)]">
+<span class="material-symbols-outlined text-5xl" data-icon="play_circle">play_circle</span>
+</div>
+</div>
+<div class="absolute bottom-8 left-8 glass-panel px-6 py-3 rounded-full text-xs tracking-widest flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                        LIVE SYNC: HISTORICAL OVERLAY ACTIVE
+                    </div>
+</div>
+</div>
+</div>
+</section>
+</main>
+ Footer 
+<footer class="w-full py-16 px-6 md:px-margin-desktop flex flex-col items-center gap-10 bg-surface-container-lowest border-t border-weathered-gold/10 mt-24">
+<h3 class="calligraphy-title text-4xl text-weathered-gold gold-glow">南山通道</h3>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-body-md text-on-surface-variant/60 hover:text-weathered-gold transition-colors" href="#">关于我们</a>
+<a class="font-body-md text-on-surface-variant/60 hover:text-weathered-gold transition-colors" href="#">版权声明</a>
+<a class="font-body-md text-on-surface-variant/60 hover:text-weathered-gold transition-colors" href="#">学术支持</a>
+<a class="font-body-md text-on-surface-variant/60 hover:text-weathered-gold transition-colors" href="#">数字保护</a>
+</div>
+<div class="text-center space-y-2">
+<p class="font-caption text-caption text-on-surface-variant/30">
+            © 2024 南山通道数字化展览馆. All Rights Reserved.
+        </p>
+<p class="font-caption text-[10px] text-on-surface-variant/20 uppercase tracking-[0.2em]">
+            Preserving Cultural Heritage Through Advanced Digital Technologies
+        </p>
+</div>
+</footer>
+</div>
+
+<div class="page" id="page-huangdu">
+Hover Trigger Area 
+
+ Side Drawer Navigation 
+
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative h-screen flex items-start justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover parallax-bg scale-105" data-alt="A cinematic shot of Huangdu Dong Village Drum Tower at dusk" id="hero-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnQwBBnkZH6nLitNW8mFIPMVKaE2PTaB8OvvsjBKNmd4Cpi6PtolHdxpNkJBQYJ02ZNwTASbmvFz2JReh8C2nWdTSdcoBH0AwaE0H3vJUxR0H8lZ108vg9goSccix5u5_NKLP29Oilp0JbOcxfboPNqpAzZAjtNJ2vSfl8TjSVqZdtPpAVfMYWLBdIigCp6PJAgmjt7CPVE2NJ0fAGyFPrJRZQs56-kp-KezmAOJCTDSXQLNlVGGx2mCTaHBvIic5xMEuyy6ptrJQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0c0f0f] via-[#0c0f0f]/40 to-transparent"></div>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<!-- Large Center-Top Title -->
+<div class="relative z-10 text-center px-6 max-w-4xl pt-[15vh]">
+<h1 class="calligraphy-title text-[140px] leading-tight text-secondary text-glow-gold mb-6 opacity-0 translate-y-10 animate-[fadeInUp_1.2s_ease-out_forwards]">皇都侗寨</h1>
+<div class="flex items-center justify-center gap-6 mb-stack-lg opacity-0 translate-y-10 animate-[fadeInUp_1.5s_ease-out_forwards]">
+<div class="h-[1px] w-16 bg-cinnabar/60"></div>
+<p class="font-headline-md text-headline-md tracking-[0.3em] text-secondary">侗族文化村寨 · 非遗核心</p>
+<div class="h-[1px] w-16 bg-cinnabar/60"></div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce text-weathered-gold/60">
+<span class="font-caption text-caption mb-2 tracking-widest uppercase">滑动探索</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Narrative & Interactive Content -->
+<section class="px-margin-desktop py-stack-lg relative -mt-32 z-20">
+<div class="grid grid-cols-12 gap-gutter max-w-[1440px] mx-auto">
+<!-- Narrative Panel -->
+<div class="col-span-12 lg:col-span-7 glass-panel p-12 rounded-xl silk-border relative overflow-hidden group animate-fadeIn">
+<div class="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
+<span class="calligraphy-title text-[180px] text-weathered-gold">侗</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-secondary mb-stack-md flex items-center gap-4">
+<span class="h-8 w-1 bg-cinnabar"></span>
+                    百年风华：皇都的根骨
+                </h3>
+<div class="space-y-6 text-on-surface/90 font-body-lg leading-relaxed">
+<p class="">
+                        皇都侗寨坐落于湖南怀化通道县，由头寨、尾寨、新寨、盘寨四个自然村寨组成。这里是侗族建筑艺术的集大成者，尤以拥有百年历史的鼓楼——“普济桥”与连绵的吊脚楼群闻名于世。
+                    </p>
+<p class="">
+                        不仅是建筑的博物馆，皇都更是活着的非遗殿堂。精美绝伦的<span class="text-cinnabar font-bold">侗锦工艺</span>穿梭在古老的织机上，而震撼人心的<span class="text-cinnabar font-bold">侗族大歌</span>则回荡在每一座鼓楼的苍穹下。
+                    </p>
+</div>
+<div class="mt-stack-lg flex gap-6">
+<button class="bg-cinnabar text-white px-10 py-4 rounded-lg font-label-md hover:brightness-110 transition-all shadow-lg shadow-cinnabar/20">探索数字化全景</button>
+<button class="border border-weathered-gold/30 text-weathered-gold bg-white/5 backdrop-blur-sm px-10 py-4 rounded-lg font-label-md hover:bg-white/10 transition-all">非遗文献</button>
+</div>
+</div>
+<!-- Interactive Modules Side Panel -->
+<div class="col-span-12 lg:col-span-5 flex flex-col gap-gutter">
+<!-- Dong Grand Song -->
+<div class="glass-panel p-8 rounded-xl silk-border group cursor-pointer hover:border-weathered-gold/40 transition-all animate-fadeIn">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h4 class="font-headline-md text-secondary">侗族大歌</h4>
+<p class="text-caption text-on-surface-variant mt-1">天籁之音 · 世界级非物质文化遗产</p>
+</div>
+<div class="w-14 h-14 rounded-full border border-cinnabar/40 flex items-center justify-center text-cinnabar group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="play_arrow">play_arrow</span>
+</div>
+</div>
+<div class="flex items-end gap-1.5 h-16">
+<div class="flex-1 bg-weathered-gold/20 h-6 rounded-t-sm animate-[wave_2s_ease-in-out_infinite_0.1s]"></div>
+<div class="flex-1 bg-weathered-gold/30 h-10 rounded-t-sm animate-[wave_2s_ease-in-out_infinite_0.3s]"></div>
+<div class="flex-1 bg-weathered-gold/50 h-14 rounded-t-sm animate-[wave_2s_ease-in-out_infinite_0.5s]"></div>
+<div class="flex-1 bg-cinnabar h-8 rounded-t-sm animate-[wave_2s_ease-in-out_infinite_0.7s]"></div>
+<div class="flex-1 bg-weathered-gold/50 h-16 rounded-t-sm animate-[wave_2s_ease-in-out_infinite_0.9s]"></div>
+<div class="flex-1 bg-weathered-gold/30 h-11 rounded-t-sm animate-[wave_2s_ease-in-out_infinite_1.1s]"></div>
+<div class="flex-1 bg-weathered-gold/20 h-7 rounded-t-sm animate-[wave_2s_ease-in-out_infinite_1.3s]"></div>
+</div>
+</div>
+<!-- Protection Data -->
+<div class="glass-panel p-8 rounded-xl silk-border animate-fadeIn">
+<h4 class="font-label-md text-on-surface-variant uppercase tracking-[0.2em] mb-6">数字化保护现状</h4>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-surface-container-low/60 p-5 rounded-lg border border-weathered-gold/10">
+<p class="font-headline-lg text-4xl text-secondary font-bold text-glow-gold-subtle">821</p>
+<p class="text-caption text-on-surface/60 mt-1">数字化采集点</p>
+</div>
+<div class="bg-surface-container-low/60 p-5 rounded-lg border border-weathered-gold/10">
+<p class="font-headline-lg text-4xl text-cinnabar font-bold text-glow-gold-subtle">4.8K</p>
+<p class="text-caption text-on-surface/60 mt-1">建筑激光扫描</p>
+</div>
+</div>
+<div class="mt-6 w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-weathered-gold w-[78.4%] relative">
+<div class="absolute right-0 top-0 h-full w-4 bg-white/20 animate-pulse"></div>
+</div>
+</div>
+<p class="text-[11px] mt-3 text-right text-on-surface-variant font-label-md tracking-wider">数字化复原进度：<span class="text-secondary">78.4%</span></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Gallery -->
+<section class="px-margin-desktop py-stack-lg relative">
+<div class="max-w-[1440px] mx-auto text-center mb-16">
+<h3 class="font-headline-lg text-headline-lg text-secondary mb-4">数字 · 生命 · 共生</h3>
+<p class="text-on-surface-variant font-label-md tracking-[0.2em]">DIGITAL · LIFE · SYMBIOSIS</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-[1440px] mx-auto">
+<!-- Card 1 -->
+<div class="glass-panel rounded-xl overflow-hidden group cursor-pointer silk-border animate-fadeIn">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Traditional Chinese tenon-and-mortise joint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSn8XxRsiKk4_CDuQEuI8uBH4wEG1WkOVVtUY9t5nrwZMrI1DpJSBrxXWsXiTQdJeRfEYeyfpE_2x5iBHUkVyHCiujIHtFTUz2GupkbpxZfIjzaRCct7dhCqtwYNFzqxx9JcvkfEdWW-gqWV9B5cxEqwFPzNbyZ3E7cR85ZFMs3C7JO0NzIhj-SE8S5CY2INrHBeIglbW5fCmX28CZHvlu5-IJEu1G3VmC_KOnl8kc135up6LGjch6h2cMbeqPjj04LpKUG6M4FL4"/>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="p-8">
+<h5 class="font-headline-md text-secondary">卯榫结构</h5>
+<p class="text-body-md text-on-surface-variant mt-3 leading-relaxed">解析千年木作的不朽智慧，无钉无胶的建筑奇迹。</p>
+<div class="mt-6 flex items-center text-cinnabar gap-2 font-label-md group-hover:gap-4 transition-all">
+<span class="">进入交互解析</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel rounded-xl overflow-hidden group cursor-pointer silk-border animate-fadeIn">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Aerial view of traditional Dong village" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl5jNNFitDGI76wuMYwWPowzQ9LJCzCb_KsoM8UEp5LDS1Tn0sG3V1gfc5MGW_Fm2iz4R_9Kt9TD_7LmGsAFsYs09RBu7Pr2fqsFqVxKKEKy9venrdRer2IEXtSqV1sCqv_faR5BEO3Oj6fGwr5wyhCrvfBU1OchQ0E3zoZ-WT9dEyVuN9EjknkQWqSYmj8mY7oKRTUe7tFym57ne6vdzaM3U40rGP_-aCXbGDWQr0a09aAXcxYJFI5usXihLUamuBhElUcUZeVY0"/>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="p-8">
+<h5 class="font-headline-md text-secondary">聚落形态</h5>
+<p class="text-body-md text-on-surface-variant mt-3 leading-relaxed">基于山水脉络的营建逻辑，探访皇都四寨的聚落哲学。</p>
+<div class="mt-6 flex items-center text-cinnabar gap-2 font-label-md group-hover:gap-4 transition-all">
+<span class="">查看地理志</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel rounded-xl overflow-hidden group cursor-pointer silk-border animate-fadeIn">
+<div class="h-64 bg-surface-container flex items-center justify-center relative">
+<div class="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-weathered-gold/40 via-transparent to-transparent"></div>
+<span class="material-symbols-outlined text-8xl text-secondary opacity-30 group-hover:scale-110 group-hover:opacity-60 transition-all duration-700" data-icon="biotech">biotech</span>
+</div>
+<div class="p-8">
+<h5 class="font-headline-md text-secondary">数字孪生</h5>
+<p class="text-body-md text-on-surface-variant mt-3 leading-relaxed">毫米级精度云端复原，让历史古迹在数字世界永生。</p>
+<div class="mt-6 flex items-center text-cinnabar gap-2 font-label-md group-hover:gap-4 transition-all">
+<span class="">启动云端建模</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer - Mineral Dark Style -->
+<footer class="w-full py-20 px-margin-desktop flex flex-col items-center gap-12 border-t border-weathered-gold/10 bg-[#0c0f0f] mt-stack-lg">
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-label-md text-on-surface/60 hover:text-secondary transition-colors tracking-widest" href="#">关于我们</a>
+<a class="font-label-md text-on-surface/60 hover:text-secondary transition-colors tracking-widest" href="#">版权声明</a>
+<a class="font-label-md text-on-surface/60 hover:text-secondary transition-colors tracking-widest" href="#">学术支持</a>
+<a class="font-label-md text-on-surface/60 hover:text-secondary transition-colors tracking-widest" href="#">数字保护</a>
+</div>
+<div class="text-center space-y-4">
+<div class="calligraphy-title text-5xl text-secondary opacity-90 tracking-widest text-glow-gold-subtle">南山通道数字化展览馆</div>
+<p class="font-caption text-caption text-on-surface/40 tracking-[0.3em] uppercase">© 2024 Nanshan Corridor Digital Museum. All Rights Reserved.</p>
+</div>
+<div class="flex gap-6 mt-4">
+<div class="w-10 h-10 rounded-full border border-weathered-gold/20 flex items-center justify-center text-on-surface/40 hover:border-secondary hover:text-secondary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-weathered-gold/20 flex items-center justify-center text-on-surface/40 hover:border-secondary hover:text-secondary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">qr_code_2</span>
+</div>
+</div>
+</footer>
+</main>
+</div>
+
+<div class="page" id="page-ziyangfeng">
+<!-- Background Layer -->
+<div class="fixed inset-0 z-0 page-bg">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background z-10"></div>
+<img class="w-full h-full object-cover scale-110 parallax-bg" id="hero-bg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHBUj76lzaeif2bNbCu4OIZ19lNnbNhSnJaruaDIHXB_N5UmfFgXGEaxILs0DqxlmgFW2pTarsjpr3rDLctzAHD3xz6DmCtuT6IwvHNduqiGDaoXOy_dBBLxl1EhyAA7HYyOmqyUW4a1RWiGYt_8X-UfzFaGk04_UeLZsU8sIqwylLhZXL73fl0qsHpclEjG4IUZuOI0H593PaVbB4OzSaygM-ObuX5Z2YjEWUOnjiZMWOUb3FNOrPCsuwqyrAFGh_sFugtldaFvg"/>
+</div>
+<!-- Main Content -->
+<main class="relative z-20 min-h-screen px-margin-mobile md:px-margin-desktop grid grid-cols-12 gap-gutter py-16">
+<!-- Hero Section -->
+<div class="col-span-12 lg:col-span-7 flex flex-col justify-center gap-stack-lg">
+<div class="space-y-4">
+<span class="font-label-md text-label-md text-weathered-gold tracking-[0.3em] uppercase">自然景观 · 生态明珠</span>
+<h1 class="calligraphy text-[64px] md:text-[96px] leading-tight text-weathered-gold text-glow-gold">紫阳峰</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant/90 max-w-xl leading-relaxed">
+                    南山最高点，云豹与黄腹角雉的隐秘家园。站在山巅，俯瞰万亩草甸的壮阔长卷。这里是与星空对话的净土，也是万物生长的避风港。
+                </p>
+</div>
+<div class="glass-panel p-8 rounded-xl max-w-2xl silk-border relative">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<span class="material-symbols-outlined text-9xl">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-weathered-gold mb-8 flex items-center gap-3">
+<span class="w-8 h-[1px] bg-weathered-gold/40"></span>
+                    核心生态功能
+                </h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="space-y-2">
+<span class="material-symbols-outlined text-cinnabar">track_changes</span>
+<p class="font-label-md text-label-md text-on-surface">云豹踪迹追踪</p>
+<p class="text-caption text-on-surface-variant/60">实时红外监测点</p>
+</div>
+<div class="space-y-2">
+<span class="material-symbols-outlined text-mineral-green">biotech</span>
+<p class="font-label-md text-label-md text-on-surface">珍稀物种观测站</p>
+<p class="text-caption text-on-surface-variant/60">黄腹角雉栖息地</p>
+</div>
+<div class="space-y-2">
+<span class="material-symbols-outlined text-weathered-gold">360</span>
+<p class="font-label-md text-label-md text-on-surface">360°云海全景</p>
+<p class="text-caption text-on-surface-variant/60">高空视野实时转播</p>
+</div>
+</div>
+<button class="mt-10 px-10 py-4 bg-cinnabar text-white font-label-md text-label-md rounded-DEFAULT shadow-xl hover:brightness-110 active:scale-95 transition-all flex items-center gap-2">
+<span>开启数字化巡山</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Side Data -->
+<div class="col-span-12 lg:col-span-5 flex flex-col gap-gutter justify-center items-center lg:items-end">
+<!-- Elevation Badge -->
+<div class="glass-panel px-10 py-12 rounded-full silk-border flex flex-col items-center justify-center text-center w-64 h-64 hover:border-weathered-gold/40 transition-all duration-500 cursor-default">
+<span class="font-caption text-weathered-gold/50 tracking-[0.2em] uppercase mb-2">Elevation</span>
+<span class="font-display-lg text-6xl text-weathered-gold num-glow">1836<small class="text-lg ml-1 opacity-60">m</small></span>
+<div class="w-12 h-[1px] bg-weathered-gold/20 my-4"></div>
+<span class="font-label-md text-label-md text-on-surface tracking-widest">南山极巅</span>
+</div>
+<!-- Protection Status -->
+<div class="glass-panel p-8 rounded-xl silk-border w-full max-w-sm space-y-6">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-weathered-gold">保护等级</span>
+<span class="bg-mineral-green/20 text-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold border border-mineral-green/30">核心保护区 · A级</span>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-xs text-on-surface-variant/70 uppercase tracking-tighter">
+<span>植被覆盖率 / Vegetation</span>
+<span class="num-glow text-weathered-gold">98.2%</span>
+</div>
+<div class="w-full h-[2px] bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-weathered-gold w-[98.2%] shadow-[0_0_8px_rgba(196,164,104,0.5)]"></div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-xs text-on-surface-variant/70 uppercase tracking-tighter">
+<span>物种多样性 / Diversity</span>
+<span class="num-glow text-weathered-gold">4.85</span>
+</div>
+<div class="w-full h-[2px] bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-weathered-gold w-[85%] shadow-[0_0_8px_rgba(196,164,104,0.5)]"></div>
+</div>
+</div>
+</div>
+<!-- Mini Map -->
+<div class="w-full max-w-sm h-48 rounded-xl overflow-hidden glass-panel silk-border relative group">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXjUcHc6bE3Fx9oLiNA9XxnLmM6rOfpvTmAQhrXP2WJBRNbG-HKtw3eFZGc6TPrSq6MR_pGmYGViAeJvkB1i84k-hbTqoZJ3pTL4gqVrjBX5qveYNH0jNDflKe9GSkR4C7ltaXKYu8Pybr50mnqJdePnQ8FyKbaaIWn0D_ONSMsx5q__bGTI2s-6rBPDrndTRRTYsjB4OygnKhDdQrYJ0RuDAPjt3qdIg2kK9GmV4zVR3i5OIKByxvB-3Tir3JUybpV_E4XrGFGoM"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-cinnabar/60 p-2 rounded-full animate-pulse shadow-lg shadow-cinnabar/20">
+<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3">
+<span class="text-[10px] text-weathered-gold font-mono bg-black/60 px-2 py-1 rounded silk-border">24.8°N, 112.5°E</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="relative z-20 w-full py-16 px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-10 border-t border-weathered-gold/10 bg-black/40 backdrop-blur-xl mt-32">
+<div class="flex flex-wrap justify-center gap-6 md:gap-12 items-center">
+<a class="font-body-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">关于我们</a>
+<a class="font-body-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">版权声明</a>
+<span class="calligraphy text-3xl text-weathered-gold text-glow-gold">南山通道</span>
+<a class="font-body-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">学术支持</a>
+<a class="font-body-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">数字保护</a>
+</div>
+<p class="font-caption text-on-surface-variant opacity-40 text-center">
+            © 2024 南山通道数字化展览馆. All Rights Reserved. <br/>
+<span class="text-[10px] tracking-widest mt-2 block">MUSEUM GRADE DIGITAL EXHIBITION</span>
+</p>
+</footer>
+</div>
+
+<div class="page" id="page-laoshanjie">
+<main class="relative">
+<!-- Hero Header Section -->
+<section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0 bg-parallax" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB87Uv0lKTgjBUknqUkkAF_MaD27nndgSt_bAhbOOcXqhrn3lrH4FR-QnQGfxFXmxUacq4rGu41aN8uKB6SLEH6wo7wB7-bcWpBN87IW6BFMi2RUU1WFeD4HOqhcuQdfZers9dGkPmVtmwIhlC05aQDvqbLtn8F3wYJsSWBZ45V75ouyQo9ym2o1TWj16sf3aPOHU5ZPagtycxUi2vmoJ8Nv4VQGzMKDoqGnZXO5fmi_rKFEtgg3ZGRHVFCtv-KT8DqOitt7N2T8yw');">
+<div class="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/60 to-background"></div>
+</div>
+<div class="relative z-10 w-full max-w-[1440px] px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-end justify-between pb-stack-lg">
+<!-- Title & Intro -->
+<div class="max-w-3xl glass-panel p-10 md:p-14 rounded-xl mt-32 md:mt-0">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-px bg-weathered-gold/50"></span>
+<span class="font-label-md text-label-md text-weathered-gold uppercase tracking-widest">历史地标 · 景点百科</span>
+</div>
+<h1 class="calligraphy text-secondary mb-6 leading-tight drop-shadow-lg text-[56px] md:text-[80px]">老山界</h1>
+<div class="text-headline-md font-headline-md text-on-surface-variant opacity-80 mb-6">Old Mountain Boundary</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed max-w-2xl">
+                        位于湖南南山国家公园内，是红军长征途中翻越的第一座真正意义上的高山。这里山势险峻，云雾缭绕，见证了革命先辈坚韧不拔的长征精神。如今，数字技术将这片险峰的历史印记与自然奇观永恒封存。
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-cinnabar hover:bg-inverse-primary text-secondary font-label-md text-label-md px-8 py-4 rounded-DEFAULT transition-all duration-300 flex items-center gap-2 shadow-[0_0_15px_rgba(217,83,79,0.3)] hover:shadow-[0_0_25px_rgba(217,83,79,0.5)]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+                            开启数字巡游
+                        </button>
+<button class="bg-transparent border border-weathered-gold/40 text-weathered-gold hover:bg-weathered-gold/10 font-label-md text-label-md px-8 py-4 rounded-DEFAULT transition-all duration-300 flex items-center gap-2">
+<span class="material-symbols-outlined">bookmark_add</span>
+                            加入研学计划
+                        </button>
+</div>
+</div>
+<!-- Vertical Quick Stats -->
+<div class="hidden md:flex flex-col gap-10 text-right border-r border-weathered-gold/20 pr-10 mb-8">
+<div>
+<div class="font-caption text-caption text-weathered-gold/70 mb-2 uppercase tracking-widest">海拔高度</div>
+<div class="font-headline-md text-headline-md text-secondary gold-glow">2,142m</div>
+</div>
+<div>
+<div class="font-caption text-caption text-weathered-gold/70 mb-2 uppercase tracking-widest">长征历史</div>
+<div class="font-headline-md text-headline-md text-secondary gold-glow">1934年</div>
+</div>
+<div>
+<div class="font-caption text-caption text-weathered-gold/70 mb-2 uppercase tracking-widest">自然风貌</div>
+<div class="font-headline-md text-headline-md text-secondary">高山草甸</div>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60 animate-bounce">
+<span class="font-caption text-caption text-weathered-gold tracking-widest uppercase">向下探索</span>
+<span class="material-symbols-outlined text-weathered-gold">arrow_downward</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-stack-lg bg-surface-container-lowest border-t border-weathered-gold/10 flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-14">
+<div class="font-headline-md text-headline-md text-secondary">南山·通道</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-10 my-8 md:my-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">关于我们</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">学术支持</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">联系我们</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">隐私政策</a>
+</div>
+<div class="font-body-md text-body-md text-secondary opacity-40">© 2024 南山·通道红绿研学数字展馆. All Rights Reserved.</div>
+</footer>
+</div>
+
+<div class="page" id="page-pingtan">
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-start overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover scale-105 mural-parallax brightness-[0.6]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5kdnCcO64cVYcr0b58FXTo8LMUd6v4ma9uXWsEO39WWmzaiLITt3-si2U9y-ofJ4g3pTxB4GzWzb7lWT7A6Z-SpPZzlGDzqJXRlIHcDFkm-2vsHkicWdtqXrZ9u4x-ov1euU2OOS0YLUEEov-OeLFY4th8u9HDwQcTfHjgcdVnUsHKhAeYyrUk6-vqSV7fb3TamNuXDbNlarMkX1wvPNhMyt_WonqLkfgZ9C2F5mR_zMB73hCslLWdQGyNZCIUagvg4o4PZ2dzao"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-4xl pt-20">
+<h2 class="font-label-md text-label-md text-weathered-gold tracking-[0.2em] mb-4 uppercase">Cultural Heritage</h2>
+<h1 class="calligraphy text-display-lg text-weathered-gold text-glow-gold leading-tight mb-2">坪滩群堡</h1>
+<h3 class="font-headline-md text-headline-md text-weathered-gold/80 italic mb-8">Pingtan Fort Clusters</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg leading-relaxed">
+                    屹立在田野间的古老堡垒，是侗族先民智慧的结晶。每一座石墙都讲述着坚守的故事。在崇山峻岭间，这些灰白色的石质建筑宛如沉默的卫士。
+                </p>
+<div class="flex flex-wrap gap-gutter">
+<button class="px-8 py-4 bg-cinnabar text-on-primary font-label-md rounded-lg hover:scale-105 transition-transform shadow-lg shadow-cinnabar/20">开启数字游览</button>
+<button class="px-8 py-4 border border-weathered-gold text-weathered-gold bg-charcoal/40 backdrop-blur-md font-label-md rounded-lg hover:bg-weathered-gold/10 transition-all silk-border">了解建筑构造</button>
+</div>
+</div>
+<!-- Core Data Section -->
+<div class="absolute bottom-12 right-margin-desktop hidden lg:flex gap-6 z-20">
+<div class="glass-panel p-6 rounded-xl w-40 text-center silk-border group hover:border-weathered-gold/60 transition-all">
+<div class="font-display-lg text-headline-lg text-weathered-gold num-glow mb-1">12</div>
+<div class="font-label-md text-caption text-on-surface-variant uppercase tracking-widest">现存堡垒</div>
+</div>
+<div class="glass-panel p-6 rounded-xl w-40 text-center silk-border group hover:border-weathered-gold/60 transition-all">
+<div class="font-display-lg text-headline-lg text-weathered-gold num-glow mb-1">185m</div>
+<div class="font-label-md text-caption text-on-surface-variant uppercase tracking-widest">海拔落差</div>
+</div>
+<div class="glass-panel p-6 rounded-xl w-40 text-center silk-border group hover:border-weathered-gold/60 transition-all">
+<div class="font-display-lg text-headline-lg text-weathered-gold num-glow mb-1">400y</div>
+<div class="font-label-md text-caption text-on-surface-variant uppercase tracking-widest">历史跨度</div>
+</div>
+</div>
+</section>
+<!-- Architecture Analysis Section -->
+<section class="py-24 bg-surface relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,#C4A468_0%,transparent_70%)]"></div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="calligraphy text-headline-lg text-weathered-gold mb-4 text-glow-gold">建筑美学与数字孪生</h2>
+<p class="font-body-md text-on-surface-variant">通过三维高精度激光扫描与纹理贴图技术，我们为您完整复刻了坪滩群堡的每一处细节。探索中国西南地区防御性建筑的独特魅力。</p>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 flex items-center justify-center border border-weathered-gold/30 rounded-full text-weathered-gold hover:bg-weathered-gold hover:text-charcoal transition-all">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center border border-weathered-gold/30 rounded-full text-weathered-gold hover:bg-weathered-gold hover:text-charcoal transition-all">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Main 3D Card -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl silk-border aspect-[16/9]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-[0.4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIdmFlvOUSs86ncuoYNSZjmQQsMgFgMlD8lryhHE7ycvtAsXVJttqp3Emv9r-hBLTDdPaQ7vsn2BEnHibz9rEbCyuVKix5QPivaMdbzyfr3WbDZPvQ7ZjjqNJN6HWY-hb_VTxExhE-kpSuY_607Di3zu-eCAzCpOMEioom7tXV5TIDVCFEAadVy-pLV3NAs2NOSRyuFybAwJUG5Fl4bv2Qi98Kzb7cAsdvgLfhqsghZ9wSkfdyfeAj3Emu2NtbkwhSFvXBjAfFhDk"/>
+<div class="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-charcoal/80 to-transparent">
+<div class="flex items-center gap-3 text-weathered-gold mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">deployed_code</span>
+<span class="font-label-md tracking-widest uppercase">Digital Twin Analysis</span>
+</div>
+<h3 class="calligraphy text-headline-lg text-weathered-gold mb-2 text-glow-gold">堡垒结构3D解构</h3>
+<p class="font-body-md text-on-surface-variant max-w-lg mb-6">解析石木构架与榫卯连接的防御力学，领略四百年前的精湛工艺。</p>
+<button class="w-fit flex items-center gap-2 text-weathered-gold font-label-md group/btn">
+                                立即进入交互模式 <span class="material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Detail Cards Stack -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="flex-1 glass-panel rounded-xl p-8 silk-border flex flex-col justify-between hover:bg-surface-container-highest transition-colors cursor-pointer group">
+<div>
+<span class="material-symbols-outlined text-weathered-gold mb-4 block" style="font-size: 32px;">shield</span>
+<h4 class="calligraphy text-headline-md text-weathered-gold mb-2">防御体系推演</h4>
+<p class="font-caption text-on-surface-variant">模拟古村落遭遇侵袭时的防御动态，分析堡垒群的交叉火力与撤离路线。</p>
+</div>
+<span class="material-symbols-outlined text-weathered-gold self-end group-hover:translate-x-1 transition-transform">trending_flat</span>
+</div>
+<div class="flex-1 glass-panel rounded-xl p-8 silk-border flex flex-col justify-between hover:bg-surface-container-highest transition-colors cursor-pointer group">
+<div>
+<span class="material-symbols-outlined text-weathered-gold mb-4 block" style="font-size: 32px;">panorama</span>
+<h4 class="calligraphy text-headline-md text-weathered-gold mb-2">坪滩村落VR</h4>
+<p class="font-caption text-on-surface-variant">沉浸式漫游古村落，穿越回明清时期的繁华集市与幽静巷弄。</p>
+</div>
+<span class="material-symbols-outlined text-weathered-gold self-end group-hover:translate-x-1 transition-transform">trending_flat</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Bento Grid) -->
+<section class="pb-24 px-margin-mobile md:px-margin-desktop">
+<h3 class="calligraphy text-headline-md text-weathered-gold mb-12 border-l-4 border-cinnabar pl-6 text-glow-gold">影像志 · 凝固的时间</h3>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 overflow-hidden rounded-xl silk-border relative group min-h-[200px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxqtTE0lOT1gzmF8owpKqMVPC7ziO9vTd1-m6Ao-JQi5RSqpNWwL72SbyBK2l_VUQ87MwgtRk5I8suaQqmAcaHyWZJgVBm3lllSfEel8olfcj88BsQ1k5dHiyivweDnNF6-zNLS3LSIl_JZSK1zP00ZC0pIJDv9v--0CnS1TMuwCF-6emKKrOcRPFkFXB0u1oPLMAZxA0yMT0Sz9G7ifHqAPh4H-dxBm2bplyHuKzOAJ-hWlVXOoSDGdVau9hP2p-YJ4Y-kM5QuNY"/>
+<div class="absolute inset-0 bg-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<span class="text-on-surface font-label-md px-6 py-2 glass-panel rounded-full silk-border">观察石纹细节</span>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 overflow-hidden rounded-xl silk-border relative group min-h-[160px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXfJY93naJLbkuBjWjpyHnloikYnEAAvt9tAP_kr1GSNFao-zPLZdPyNehIjiC5PU0c0kRI2Jw_CI7HAR-pbXbonck5zOG5NaczmpdFClhzlBr3pUvo3XcKdmdrN3m44PB9-WkTv8flEmKHTVhnOYbxcSV9iNvD9hTmINX592Wg7DnX2KklgYfOU_3ATsT8BCu9urzgQGYQ0tGNTcOVhVzAhyAwrOE_z_FK9Az_t90zaJ9_EZbAHDUrHkVJbaYSIiLlAhDz2UnbUs"/>
+</div>
+<div class="md:col-span-1 md:row-span-2 overflow-hidden rounded-xl silk-border relative group min-h-[160px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC0wVRGksrvXhv0SMsJME-qm1R84W-BQboIOA1ZFRM9DjNPBlJr5CIIKQ0xlVErp8qlbiiyey3ZSHZIMUBCLyOUERk4heQr-kUr8A-N9xHBU98OalqrbnUo79BA7ZyohPkMZZFnOItRfaB_2eqUmL0JFGW1ma1VBKraC9NpZAFELq4BFEHztRGUNpn6Cj81ze-u3_OFGGepFpAhk7d0XY9ld98RVdvt5nWS5WUYltqh443FlYkMFj9vktrsk4SpEm3W8PSPeBKZow"/>
+</div>
+<div class="md:col-span-1 md:row-span-1 overflow-hidden rounded-xl silk-border relative group min-h-[160px]">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbB8smd9jynMJUiTRXQGRPVxBphfTGKfFRbUPGJUNhMKL8GGvquyOf0CQrG98VBK8rGBuZwvXyFHLN7qRBoIFezyI7lSWHTMINNchf6QhzHowuPt4ltb4yIZz_N92BxQaUl24vR07XF32mjFSkuUT_2FIPav2t3E5VwVLoI0jydJC2L_t7oyvb6gs1minmbYDjc0pStgI_aO2yOEHmq5qbsPPDr5I8PnAJzO2LybWEKonBj2FnGoPMvcfzumsqxm-ekDqQC99XZEA"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-gutter border-t border-weathered-gold/10 bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row justify-between w-full items-center gap-8">
+<div class="text-center md:text-left">
+<span class="calligraphy text-headline-md text-weathered-gold">南山通道</span>
+<p class="font-body-md text-caption text-on-surface-variant mt-2 max-w-xs">探寻历史脉络，重塑数字遗产，为全球用户提供沉浸式的文化研究体验。</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-stack-lg">
+<a class="font-body-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">关于我们</a>
+<a class="font-body-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">版权声明</a>
+<a class="font-body-md text-on-surface-variant hover:text-weathered-gold transition-colors" href="#">学术支持</a>
+<a class="font-body-md text-cinnabar font-bold hover:opacity-80 transition-opacity" href="#">数字保护</a>
+</div>
+</div>
+<div class="w-full border-t border-weathered-gold/5 pt-8 flex flex-col md:flex-row justify-between items-center text-on-surface-variant opacity-60">
+<p class="font-caption text-caption">© 2024 坪滩群堡数字化展览馆. All Rights Reserved.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<span class="material-symbols-outlined hover:text-weathered-gold cursor-pointer transition-colors">language</span>
+<span class="material-symbols-outlined hover:text-weathered-gold cursor-pointer transition-colors">share</span>
+<span class="material-symbols-outlined hover:text-weathered-gold cursor-pointer transition-colors">help</span>
+</div>
+</div>
+</footer>
+</div>
+
+<script>
+    // ===================== 页面切换 =====================
+    const pages = document.querySelectorAll('.page');
+    const sideNav = document.getElementById('side-nav');
+
+    function showPage(pageId) {
+        if (!document.getElementById(pageId)) return;
+        pages.forEach(p => p.classList.toggle('active', p.id === pageId));
+        document.querySelectorAll('#side-nav .nav-link').forEach(a =>
+            a.classList.toggle('active', a.dataset.page === pageId));
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        sideNav.classList.remove('open');
+        history.replaceState(null, '', '#' + pageId);
+    }
+
+    // 事件委托：侧边栏链接 + 页面内所有 data-page 元素（顶栏菜单、景点卡片等）
+    document.addEventListener('click', (e) => {
+        const jump = e.target.closest('[data-page]');
+        if (jump) { e.preventDefault(); showPage(jump.dataset.page); return; }
+        if (!sideNav.contains(e.target) && e.target.id !== 'menu-btn') {
+            sideNav.classList.remove('open');
+        }
+    });
+
+    document.getElementById('menu-btn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        sideNav.classList.toggle('open');
+    });
+
+    // 打开时根据 URL hash 恢复页面，否则默认首页
+    const initial = location.hash.replace('#', '');
+    showPage(document.getElementById(initial) ? initial : 'page-home');
+
+    // ===================== 紫阳峰页视差（与其余页脚本共存） =====================
+    window.addEventListener('scroll', () => {
+        const scroll = window.pageYOffset;
+        const heroBg = document.querySelector('#page-ziyangfeng.active #hero-bg');
+        if (heroBg) {
+            heroBg.style.transform = `translateY(${scroll * 0.4}px) scale(${1.1 + scroll * 0.0001})`;
+        }
+        document.querySelectorAll('#page-pingtan.active .mural-parallax').forEach(img => {
+            img.style.transform = `translateY(${scroll * 0.1}px) scale(1.05)`;
+        });
+    });
+
+    // ===================== 各页面原有脚本 =====================
+    // ===== 首页 =====
+(function(){
+// Simple parallax effect for the hero background
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const heroBg = document.querySelector('#page-home .hero-overlay').previousElementSibling;
+        if(heroBg) {
+            // Subtle upward movement
+            heroBg.style.transform = `translateZ(-1px) scale(2) translateY(${scrolled * 0.1}px)`;
+        }
+    });
+})();
+
+// ===== 通道会议旧址 =====
+(function(){
+// Hero Parallax Effect
+    window.addEventListener('scroll', () => {
+        const scroll = window.pageYOffset;
+        const heroBg = document.querySelector('#page-tongdao #hero-bg-tongdao');
+        if (heroBg) {
+            heroBg.style.transform = `translateY(${scroll * 0.4}px) scale(${1.05 + scroll * 0.0001})`;
+        }
+    });
+
+    // Material Symbols Weighting
+    document.querySelectorAll('.material-symbols-outlined').forEach(icon => {
+        if (icon.getAttribute('data-weight') === 'fill') {
+            icon.style.fontVariationSettings = "'FILL' 1";
+        }
+    });
+})();
+
+// ===== 茅坪湖 =====
+(function(){
+// Micro-interactions & Parallax effect
+    document.addEventListener('mousemove', (e) => {
+        const amount = 15;
+        const x = (e.clientX / window.innerWidth - 0.5) * amount;
+        const y = (e.clientY / window.innerHeight - 0.5) * amount;
+        
+        const parallaxEls = document.querySelectorAll('#page-maoping .parallax-bg');
+        parallaxEls.forEach(el => {
+            el.style.transform = `translate(${x}px, ${y}px) scale(1.1)`;
+        });
+    });
+
+    
+})();
+
+// ===== 皇都侗寨 =====
+(function(){
+// Parallax effect for hero image
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const heroImage = document.querySelector('#page-huangdu #hero-image');
+        if (heroImage) {
+            heroImage.style.transform = `translateY(${scrolled * 0.3}px) scale(${1.05 + scrolled * 0.0001})`;
+        }
+    });
+
+    // Intersection Observer for glass panels
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fadeIn');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('#page-huangdu .glass-panel').forEach(panel => {
+        observer.observe(panel);
+    });
+})();
+
+
+// ===== 认识通道 =====
+(function(){
+// Parallax Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImg = document.querySelector('#page-renshitongdao.active section img');
+            if (heroImg) {
+                heroImg.style.transform = `scale(1.05) translateY(${scrolled * 0.1}px)`;
+            }
+        });
+})();
+</script>
+</body>
+</html>
